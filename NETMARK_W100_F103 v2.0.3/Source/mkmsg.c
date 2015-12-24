@@ -66,7 +66,7 @@ void msg24A(void)
 	msg[3] = MMSI >> 6;
 	msg[4] = MMSI << 2;  //µÍ2bitÎª²¿·Ö±àºÅ£º00
 	for(i=0;i<15;i++)   
-		msg[5+i] = boatnum[i+1];	 //MMSI´¬Ö»Ãû³Æ,ASCIIÂë
+		 msg[5+i] = boatnum[i+1];	 //MMSI´¬Ö»Ãû³Æ,ASCIIÂë
 	len=20;
 }
 /***********************************************************
@@ -84,19 +84,19 @@ void msg24B(void)
 	msg[4] = (MMSI << 2)|0x01;  //µÍ2bitÎª²¿·Ö±àºÅ£º01
 	msg[5] = 0x00;	 //´¬²°ÀàÐÍºÍ»õÎïÀàÐÍ	
 	msg[6] = Vender_ID[0]; //¹©Ó¦ÉÌID 1:8
- 	msg[7] = Vender_ID[1]; // 9:16
- 	msg[8] = Vender_ID[2];  //  17:24
- 	msg[9] = Vender_ID[3];   //25:32
- 	msg[10] = Vender_ID[4]; 		//33:40
- 	msg[11] = Vender_ID[5] | Call_sign[0];    //¹©Ó¦ÉÌID 41:42;ºôºÅ 1:6
- 	msg[12] = Call_sign[1];       //ºôºÅ 7:14
- 	msg[13] = Call_sign[2];       //ºôºÅ 15:22
- 	msg[14] = Call_sign[3];								//ºôºÅ 23:30
- 	msg[15] = Call_sign[4];       //ºôºÅ 31:38
- 	msg[16] = Call_sign[5] | boatsize_a >> 5;   //ºôºÅ 39:42 // ´¬²°³ß´ç  A: 1-4
+	msg[7] = Vender_ID[1]; // 9:16
+	msg[8] = Vender_ID[2];  //  17:24
+	msg[9] = Vender_ID[3];   //25:32
+	msg[10] = Vender_ID[4]; 		//33:40
+	msg[11] = Vender_ID[5] | Call_sign[0];    //¹©Ó¦ÉÌID 41:42;ºôºÅ 1:6
+	msg[12] = Call_sign[1];       //ºôºÅ 7:14
+	msg[13] = Call_sign[2];       //ºôºÅ 15:22
+	msg[14] = Call_sign[3];								//ºôºÅ 23:30
+	msg[15] = Call_sign[4];       //ºôºÅ 31:38
+	msg[16] = Call_sign[5] | boatsize_a >> 5;   //ºôºÅ 39:42 // ´¬²°³ß´ç  A: 1-4
 	msg[17] =	boatsize_a << 3 | boatsize_b >> 6; //A: 5-9 // B: 1-3  
- 	msg[18] = boatsize_b << 2 | boatsize_c >> 4;  // B: 4-9 // C:1-2
- 	msg[19] = boatsize_c << 4| boatsize_d >> 2;   // C: 3-6 // D: 1- 4
- 	msg[20] = boatsize_d << 6;										// D: 5,6        
+	msg[18] = boatsize_b << 2 | boatsize_c >> 4;  // B: 4-9 // C:1-2
+	msg[19] = boatsize_c << 4| boatsize_d >> 2;   // C: 3-6 // D: 1- 4
+	msg[20] = boatsize_d << 6;										// D: 5,6        
 	len=21;
 }

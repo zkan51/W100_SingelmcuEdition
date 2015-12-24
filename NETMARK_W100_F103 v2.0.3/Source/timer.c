@@ -184,76 +184,66 @@ void TIM3_IRQHandler(void)
 {
   if (TIM_GetITStatus(TIM3, TIM_IT_Update) != RESET)
   {
-	
 		  if(10 == tim3_cnt)	//打开PLL,1个时隙约20.83us
-			{
-				if(TIM3_CAM3_flag==0)
 				{
-					PLL_ON();
-					TIM3_CAM3_flag=1;
+						if(TIM3_CAM3_flag==0)
+						{
+							PLL_ON();
+							TIM3_CAM3_flag=1;
+						}
 				}
-			}
 
 			if(260 == tim3_cnt)  //等待250个时隙，VCC电压稳定及晶振起振
 			{
-				if(TIM3_CAM5_flag == 0) 
-				{
-					if(swchflag == 0)
+					if(TIM3_CAM5_flag == 0) 
 					{
-						//flag_channel = BKP_ReadBackupRegister(BKP_DR6); //flag_channel = 0;//flag_channel = (1-flag_channel);
-						SKY72310_Config();
-						flag_channel = (1-flag_channel); //flag_channel=(AIS_CHANNEL)(1-flag_channel);
-						Write_TX_Channel();
-						
-						msg_send1();//生成消息
+							if(swchflag == 0)
+							{
+									SKY72310_Config();
+									flag_channel = (1-flag_channel); //flag_channel=(AIS_CHANNEL)(1-flag_channel);
+									Write_TX_Channel();
+									
+									msg_send1();//生成消息
+							}
+							else if(swchflag == 1)
+							{
+									SKY72310_Config();
+									
+									msg_send2();//生成消息
+							}
+							TIM3_CAM5_flag = 1;
 					}
-					else if(swchflag == 1)
-					{
-						//flag_channel = BKP_ReadBackupRegister(BKP_DR6); //flag_channel = 1; //flag_channel = (1-flag_channel);
-						SKY72310_Config();
-						
-						msg_send2();//生成消息
-					}
-					TIM3_CAM5_flag = 1;
-				}
 			}
 			
 			if(290 == tim3_cnt)  //配置PLL及锁定
 			{
-				if(TIM3_CAM1_flag == 0) 
-				{
-					PA_ON();
-					TIM3_CAM1_flag = 1;
-				}
+					if(TIM3_CAM1_flag == 0) 
+					{
+							PA_ON();
+							TIM3_CAM1_flag = 1;
+					}
 			}
 			
 			if(485 == tim3_cnt)  //发送时隙到来时开启任务标志
 			{
-				if(task_flag1!=on)
-				{					
-					A=0;       //初始化
-					B=0;
-					num_bit=0;
-					task_flag1=on;
-					
-					/*if(swchflag == 0)
-					{
-						msg_send1();//生成消息
+					if(task_flag1!=on)
+					{					
+							A=0;       //初始化
+							B=0;
+							num_bit=0;
+							task_flag1=on;
 					}
-					else if(swchflag == 1)
-					{
-						msg_send2();//生成消息
-					}*/
-				}
 			}
 
-			if(task_flag1==on)  //写PLL频率字
+			//
+			//写PLL频率字
+			//
+			if(task_flag1==on)  
 			{	
 					SKY72310_Out(0x09,dds_word_real[msg18_24AB_add[B]][A]);
 					while (SPI_I2S_GetFlagStatus(SPI1, SPI_I2S_FLAG_TXE) == RESET);
 					SPI1_CS_HIGH();
-
-					//GPIO_WriteBit(GPIOB, GPIO_Pin_5,	(BitAction)(1-GPIO_ReadOutputDataBit(GPIOB, GPIO_Pin_5)) );  //临时测试
+				
 					if(A==4)
 					{
 						A=0;
@@ -264,6 +254,8 @@ void TIM3_IRQHandler(void)
 						A++;
 					}
 					num_bit++;
+					
+					// 发送结束判断
 					if(num_bit>=var_m24)//设置一个变量var_m24=512*5-1
 					{			
 							task_flag1=off; //没有发送任务在执行
@@ -274,105 +266,88 @@ void TIM3_IRQHandler(void)
 							TIM3_CAM1_flag = 0;
 						
 							tim3_cnt=0;
-
-							if(swchflag == 0)
+       
+						 
+							if(swchflag == 0)//消息18 发送结束
 							{
 							}
-							else if(swchflag == 1)
+							else if(swchflag == 1) //消息24AB发送结束
 							{
-								TIM_ITConfig(TIM3, TIM_IT_Update , DISABLE); //关闭T3中断
+								TIM_ITConfig(TIM3, TIM_IT_Update , DISABLE);
 								TIM_Cmd(TIM3, DISABLE);
 							}
 							
 							PLL_OFF();
 							PA_OFF();
-							//GPS_ON();
-							////////////////判断时间间隔，要求每3min更新一次gps////////////////
-						swchflag ++;
-						
-						if(swchflag == 2)   //判断时间间隔
-						{
-							if(interval_num == interval_s)
-							{
-								interval_num=0;
-								BKP_WriteBackupRegister(BKP_DR1,interval_num);
-
-								GPS_ON();
-								TIM4_ON();
-								TIM2_Configuration();
-							}
-							else if(interval_num > interval_s)
-							{	
-								interval_num = 0;
-								BKP_WriteBackupRegister(BKP_DR1,interval_num);
-								if(charging_flag == off)
-								{
-									RTC_Init();
-									PWR_WakeUpPinCmd(ENABLE);
-									PWR_EnterSTANDBYMode();
-								}
-							}
-							else //<5
-							{
-								interval_num++;
-								BKP_WriteBackupRegister(BKP_DR1,interval_num);
-								if(charging_flag == off)
-								{
-									RTC_Init();
-									PWR_WakeUpPinCmd(ENABLE);
-									PWR_EnterSTANDBYMode();
-								}
-							}
+							swchflag ++;
 							
-						}
+							////////////////消息发送结束///////////////
+							//判断是否要开GPS，GPS 3分钟开一次
+							if(swchflag == 2)
+							{
+									if(interval_num == interval_s)
+									{
+											interval_num=0;
+											BKP_WriteBackupRegister(BKP_DR1,interval_num);
+
+											GPS_ON();
+											TIM4_ON();
+											TIM2_Configuration();
+									}
+									else if(interval_num > interval_s)
+									{	
+											interval_num = 0;
+											BKP_WriteBackupRegister(BKP_DR1,interval_num);
+											if(charging_flag == off)
+											{
+													RTC_Init();
+													PWR_WakeUpPinCmd(ENABLE);
+													PWR_EnterSTANDBYMode();
+											}
+									}
+									else //<5
+									{
+											interval_num++;
+											BKP_WriteBackupRegister(BKP_DR1,interval_num);
+											if(charging_flag == off)
+											{
+													RTC_Init();
+													PWR_WakeUpPinCmd(ENABLE);
+													PWR_EnterSTANDBYMode();
+											}
+									}
+							}
 						
 					}
 			}
 			
 		 tim3_cnt++;
-			
-// USART_SendData(USART1, 0xaa);
-// while (!(USART1->SR & USART_FLAG_TXE)) ;
-			
 		 TIM_ClearITPendingBit(TIM3, TIM_IT_Update);
 	}	
 }
 
-
-void TIM2_IRQHandler(void)  //GPS失效时间判断
+//
+//GPS失效时间判断
+//
+void TIM2_IRQHandler(void)  
 {
 	if( TIM_GetITStatus(TIM2 , TIM_IT_Update) != RESET ) 
 	{
 		
 		tim2_cnt++;
-		
 		if(tim2_cnt == gps_invalid)     //2min
 		{
-			TIM_Cmd(TIM2, DISABLE);
-			GPS_OFF();
-			tim2_cnt = 0;
-			LED_OFF();
-			TIM4_OFF();
+				TIM_Cmd(TIM2, DISABLE);
+				GPS_OFF();
+				tim2_cnt = 0;
+				LED_OFF();
+				TIM4_OFF();
 
-			//gps_invalid_num++;
-			//BKP_WriteBackupRegister(BKP_DR2,gps_invalid_num);
-			
-			//txbuf[0]='$'; txbuf[1]=0x1C; txbuf[2]=0x00; //GPS失效指令
-			//sendback(); //			
-			
-// 			if(gps_invalid_num >= 3)
-// 			{
-// 				interval_s = intervalB;
-// 				gps_invalid_num = 0;
-// 				BKP_WriteBackupRegister(BKP_DR2,gps_invalid_num);
-// 				BKP_WriteBackupRegister(BKP_DR3,interval_s);
-// 			}
 			 if(charging_flag == off)
 			 {		
-					
-				 RTC_Init();
-				 PWR_WakeUpPinCmd(ENABLE);
-				 PWR_EnterSTANDBYMode();
+						RTC_Init();
+						PWR_WakeUpPinCmd(ENABLE);
+						PWR_EnterSTANDBYMode();
 			 }
 		}
 				
@@ -380,23 +355,25 @@ void TIM2_IRQHandler(void)  //GPS失效时间判断
 	}	
 }
 
+//
+//开GPS时 绿灯闪
+//
 void TIM4_IRQHandler(void)
 {
 	if (TIM_GetITStatus(TIM4, TIM_IT_Update) != RESET)
 	{
-		if(time4flag == 0)
-		{ 
-			LED_ON();
-			time4flag = 1;
-    }
-    else
-    {    
-		    LED_OFF();
-      time4flag = 0;
-	  }
-		
-		TIM_ClearITPendingBit(TIM4, TIM_IT_Update  );
-	}				    	    
+			if(time4flag == 0)
+			{ 
+					LED_ON();
+					time4flag = 1;
+			}
+			else
+			{    
+					LED_OFF();
+					time4flag = 0;
+			}
+			TIM_ClearITPendingBit(TIM4, TIM_IT_Update);
+	}
 }
 
 

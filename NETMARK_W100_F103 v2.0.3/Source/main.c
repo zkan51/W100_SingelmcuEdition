@@ -125,43 +125,25 @@ int main(void)
 	TIM4_Configuration();
 	Adc_Init();
 	Delay(0xff);
-		
-	//SendBetteryLow();//电量低指示
- 	RCC_APB1PeriphClockCmd(RCC_APB1Periph_PWR | RCC_APB1Periph_BKP, ENABLE);  //for 低功耗模式 必开
- 	PWR_BackupAccessCmd(ENABLE);
+
+ RCC_APB1PeriphClockCmd(RCC_APB1Periph_PWR | RCC_APB1Periph_BKP, ENABLE);  //for 低功耗模式 必开
+ PWR_BackupAccessCmd(ENABLE);
 	
 	BackupRegisterInit();
 	Read_GPS_Info();
 	
-// 	ReadflashMActivation();     //激活，将ID写入FLASH
-// 	while(activation_flag!=0x0101); 
-// 	
-// 	ReadflashMUID();  //ID验证
-// 	while( Get_ChipID() != 3 );
-// 	
 	ReadFlashInit(); //读取flash数据
 
-  Is_Coded();    //判断是否写入过密码
+ Is_Coded();    //判断是否写入过密码
 
 	PA_OFF();
 	GPS_OFF();
 	PLL_OFF();
 	LED_OFF();
 	
-	//Read_OpenOnce(); //判断是否是第一次开机，控制开机绿灯闪烁
 	
-  SKY72310_Init();
+ SKY72310_Init();
 	
-	//reset_flag=off;
-	//charging_flag=off;
-	
-	//DBGMCU_Config(DBGMCU_STANDBY,ENABLE);	
-	
-	//interval_s = 5;
-	//RTC_Init();
-
-// 	PWR_WakeUpPinCmd(ENABLE);
-// 	PWR_EnterSTANDBYMode();
 	while (1)
   {	
 			 ProgramSelector();  //拨码开关
@@ -173,11 +155,11 @@ int main(void)
 				{
 						if (GPIO_ReadInputDataBit(GPIOA,GPIO_Pin_0)==0x00) //退出充电判断
 						{
-											LED_RED_OFF();
-											LED_OFF();
-											charging_flag = off; 
-											task_flag2 = on;
-							    interval_num = interval_s;
+										LED_RED_OFF();
+										LED_OFF();
+										charging_flag = off; 
+										task_flag2 = on;
+										interval_num = interval_s;
 						}
 				}
   }

@@ -132,158 +132,149 @@ void Usart3GetCommand(void)  //串口3接收
 		switch(com3_rxbuf[1])	
 		{
 			case 0x01://向网位仪写船名
-			{
-				tx1buf[0] = '$'; tx1buf[1] = 0x01;tx1buf[2] = 0x01; //应答 写入船名成功
-				for(i=3;i<18;i++)
-					tx1buf[i]=0x00;
-				com1sendback();
-			}
-			break;
+								{
+										tx1buf[0] = '$'; 
+									 tx1buf[1] = 0x01;
+									 tx1buf[2] = 0x01; //应答 写入船名成功
+										for(i=3;i<18;i++)
+											 tx1buf[i]=0x00;
+									
+										com1sendback();
+								}
+								break;
 			
-			case 0x03://注入钥匙
-			{
-				for(i=0;i<18;i++)
-					tx1buf[i] = com3_rxbuf[i];
-				com1sendback();
-			}
-			break;
-			
-			case 0x06://读取钥匙
-			{
-				for(i=0;i<18;i++)
-					tx1buf[i] = com3_rxbuf[i];
-				com1sendback();
-			}
-			break;
-			
-			case 0x0F:                //钥匙开
-			{
-				swchflag = 0;
-				
-				ReadBackup();
-				interval_num = intervalA;
-				interval_s = intervalA;
-//				time_o = 0xffff;
-				WriteBackup();
-				Read_Flash_GPS_Info();
-				
-				task_flag2=on;
-				
-				gps_led_on = 1;
-// 				TIM4_Configuration();
-// 				TIM4_ON(); //绿灯开机慢闪
-			}
-			break;
+//			case 0x03://注入钥匙
+//								{
+//									 for(i=0;i<18;i++)
+//										  tx1buf[i] = com3_rxbuf[i];
+//									
+//									 com1sendback();
+//								}
+//								break;
+//			
+//			case 0x06://读取钥匙
+//								{
+//									 for(i=0;i<18;i++)
+//										  tx1buf[i] = com3_rxbuf[i];
+//									
+//									 com1sendback();
+//								}
+//								break;
+//			
+//			case 0x0F:                //钥匙开
+//								{
+//										swchflag = 0;
+//										
+//										ReadBackup();
+//										interval_num = intervalA;
+//										interval_s = intervalA;
+//										WriteBackup();
+//										Read_Flash_GPS_Info();
+//										
+//										task_flag2=on;
+//										gps_led_on = 1;
+//								}
+//								break;
 
-			case 0x10:             //钥匙关
-			{
-				ReadBackup();
-				interval_num = intervalA;
-				interval_s = intervalA;
-//				time_o = 0xffff;
-				WriteBackup();
-				Write_Flash_GPS_Info();  //存入flash
-				
-				Enter_PowersaveMode();
-				
-				LedShutdown();
-				
-				PWR_WakeUpPinCmd(ENABLE);
-				PWR_EnterSTANDBYMode();
-			}
-			break;
+//			case 0x10:             //钥匙关
+//								{
+//									ReadBackup();
+//									interval_num = intervalA;
+//									interval_s = intervalA;
+//					//				time_o = 0xffff;
+//									WriteBackup();
+//									Write_Flash_GPS_Info();  //存入flash
+//									
+//									Enter_PowersaveMode();
+//									
+//									LedShutdown();
+//									
+//									PWR_WakeUpPinCmd(ENABLE);
+//									PWR_EnterSTANDBYMode();
+//								}
+//								break;
 			
 			case 0x0C:   //恢复出厂设置，清除密码
-			{
-				tx1buf[0] = '$'; tx1buf[1] = 0x0c;tx1buf[2] = 0x01; //应答 写入船名成功
-				for(i=3;i<18;i++)
-					tx1buf[i]=0x00;
-				com1sendback();
-			}
-			break;
+								{
+										tx1buf[0] = '$';
+								 	tx1buf[1] = 0x0c;
+									 tx1buf[2] = 0x01; //应答 写入船名成功
+									
+										for(i=3;i<18;i++)
+											  tx1buf[i]=0x00;
+									
+										com1sendback();
+								}
+								break;
 			
 			case 0x12: //发射间隔设置 /间隔计数次数固定值
-			{
-				tx1buf[0] = '$'; tx1buf[1] = 0x12;tx1buf[2] = 0x01; //应答 写入船名成功
-				for(i=3;i<18;i++)
-					tx1buf[i]=0x00;
-				com1sendback();
-			}
-			break;
+								{
+											tx1buf[0] = '$'; 
+									  tx1buf[1] = 0x12;
+									  tx1buf[2] = 0x01; //应答 写入船名成功
+									
+											for(i=3;i<18;i++)
+												  tx1buf[i]=0x00;
+									
+											com1sendback();
+								}
+								break;
 			
 			case 0x17: //连接网位仪
-			{
-				task_flag2=off;
-				
-				TIM3_OFF();
-				
-				Enter_PowersaveMode();
-				
-				tx1buf[0] = '$'; tx1buf[1] = 0x17; tx1buf[2] = 0x01;
-				for(i=3;i<18;i++)   tx1buf[i]=0x00;
-				com1sendback();
-		
-				charging_flag = on;
-			}
-			break;
+								{
+										task_flag2=off;
+										
+										TIM3_OFF();
+										Enter_PowersaveMode();
+										tx1buf[0] = '$'; 
+									 tx1buf[1] = 0x17; 
+									 tx1buf[2] = 0x01;
+									
+										for(i=3;i<18;i++) 
+									    tx1buf[i]=0x00;
+									
+										com1sendback();
+								
+										charging_flag = on;
+								}
+								break;
 
 			case 0x18: //断开网位仪
-			{
-				tx1buf[0] = '$'; tx1buf[1] = 0x18;
-				for(i=2;i<18;i++)   tx1buf[i]=0x00;
-				com1sendback();
-				
-			}
-			break;
-	// 		case 0x19: //电量低
-	// 		{
-	// 			tx1buf[0] = '$'; tx1buf[1] = 0x19;
-	// 			for(i=2;i<18;i++)   tx1buf[i]=0x00;
-	// 			com1sendback();
-	// 			
-	// 		}
-	// 		break;
+								{
+									 tx1buf[0] = '$'; 
+									 tx1buf[1] = 0x18;
+									 for(i=2;i<18;i++)  
+    									tx1buf[i]=0x00;
+									
+									 com1sendback();
+								}
+								break;
+			
 			case 0x1A: //进入/退出充电
-			{
-				if(com3_rxbuf[2] == 0)  //退出充电
-				{
-	//test(0x1a);
-					charging_flag = off;
-					
-// 					com3_txbuf[0] = '$'; com3_txbuf[1]=0x1A; com3_txbuf[2]=0x00;
-// 					for(i=3;i<18;i++)
-// 						com3_txbuf[i]=0x00;
-// 						
-// 					sendtocom3();
-					LED_OFF();
+								{
+									if(com3_rxbuf[2] == 0)  //退出充电
+									{
+											charging_flag = off;
+											
+											LED_OFF();
 
-					RTC_Init();
-					PWR_WakeUpPinCmd(ENABLE);
-					PWR_EnterSTANDBYMode();
-				}
-				else  //进入充电
-				{
-	//test(0x1b);
-					charging_flag = on;
-					
-					TIM3_OFF();
-					Enter_PowersaveMode();
-					
-// 					com3_txbuf[0] = '$'; com3_txbuf[1]=0x1A; com3_txbuf[2]=0x01;
-// 					for(i=3;i<18;i++)
-// 						com3_txbuf[i]=0x00;
-// 						
-// 					sendtocom3();
-					
-					TIM4_OFF();
-					
-					LED_ON();
-				}
-			}
-			break;
+											RTC_Init();
+											PWR_WakeUpPinCmd(ENABLE);
+											PWR_EnterSTANDBYMode();
+									}
+				     else  //进入充电
+									{
+											charging_flag = on;
+											TIM3_OFF();
+											Enter_PowersaveMode();
+											TIM4_OFF();
+											LED_ON();
+									}
+								}
+								break;
 
 			default:
-			break;		
+								break;		
 		}
 	}
 }

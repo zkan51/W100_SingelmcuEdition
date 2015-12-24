@@ -392,51 +392,42 @@ void msg_send2()
  *****************************************************************/
 void send_on(void)
 {
-//	u8 i;
-	num_cnt++;//记录执行函数的次数
-	if(num_slot>=SEND_INTERVAL)//防止发射时隙溢出
-	{
-		num_slot=SEND_INTERVAL/2;
-	}
+	 num_cnt++;//记录执行函数的次数
+		if(num_slot>=SEND_INTERVAL)//防止发射时隙溢出
+		{
+			num_slot=SEND_INTERVAL/2;
+		}
 	
-	//if((Get_Adc_Average(ADC_Channel_9,3) < 1500)) //非充电状态
-	if(GPIO_ReadInputDataBit(GPIOA,GPIO_Pin_0)==0x00)
-	{
-			if(task_flag2==on)	//发射条件：上次任务完成
-			{
-							LedFlash();
-							TIM3_OFF();	//消息生成前关闭定时器T3
-
-						// 		if((num_cnt%CH_SW)==0)// 信道切换,没发射两次AIS消息切换信道
-						// 		{
-						//  			flag_channel = (1-flag_channel); //flag_channel=(AIS_CHANNEL)(1-flag_channel);
-						// 			Write_TX_Channel();
-						// 		}
-							
-							task_flag1=off;
-							task_flag2=off;
-							
-							TIM3_CAM5_flag = 0;  //TIM3标记变量清零
-							TIM3_CAM3_flag= 0;
-							TIM3_CAM1_flag= 0;
-							
-							swchflag = 0;
-							tim3_cnt=0;
-							TIM3_Configuration();  //打开定时器T3
-							
-				}
-	}
-	else //充电状态
-	{
-			charging_flag = on;
-			TIM_Cmd(TIM2, DISABLE);
-		 TIM_Cmd(TIM4, DISABLE);
-			GPS_OFF();
-			tim2_cnt = 0;
-			TIM3_OFF();
-			LED_ON();
-			LED_RED_ON();
-	}
+		if(GPIO_ReadInputDataBit(GPIOA,GPIO_Pin_0)==0x00)
+		{
+				if(task_flag2==on)	//发射条件：上次任务完成
+				{
+								LedFlash();
+								TIM3_OFF();	//消息生成前关闭定时器T3
+								
+								task_flag1=off;
+								task_flag2=off;
+								
+								TIM3_CAM5_flag = 0;  //TIM3标记变量清零
+								TIM3_CAM3_flag= 0;
+								TIM3_CAM1_flag= 0;
+								
+								swchflag = 0;
+								tim3_cnt=0;
+								TIM3_Configuration();  //打开定时器T3
+					}
+		}
+		else //充电状态
+		{
+				charging_flag = on;
+				TIM_Cmd(TIM2, DISABLE);
+				TIM_Cmd(TIM4, DISABLE);
+				GPS_OFF();
+				tim2_cnt = 0;
+				TIM3_OFF();
+				LED_ON();
+				LED_RED_ON();
+		}
 }
 
 
