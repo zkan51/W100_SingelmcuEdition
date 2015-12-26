@@ -92,16 +92,16 @@ static void RTC_Configuration(void)
 	EXTI_Configuration();
 	
 	/*Sets the RTC alarm value:Sets the RTC alarm value to 1800sec*/
-	switch(interval_s)  //根据flash里的间隔值，设置rtc唤醒间隔
+	switch(intervalA)  //根据flash里的间隔值，设置rtc唤醒间隔
 	{
 		case 5:
-			RTC_SetAlarm(35);
+			RTC_SetAlarm(33);
 		break;
 		case 2:
-			RTC_SetAlarm(74);
+			RTC_SetAlarm(70);
 		break;
 		case 0:
-			RTC_SetAlarm(222);
+			RTC_SetAlarm(220);
 		break;
 		default:
 			RTC_SetAlarm(74);

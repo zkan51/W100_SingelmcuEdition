@@ -43,7 +43,7 @@ u16 TIM3_CAM5=0;  //PLL提前打开的时隙
 u16 var_m24; //记录发送消息bit数，当只发送消息18时，var_m24=256*5-1;当发送消息24时，var_m24=512*5-1;
 //u16 interval_s=1125; //375;      //2250; //初始发射间隔，1min.   //6750   
 u16 interval_s;  //间隔计数变化值 
-u16 interval_num; //发射间隔计数，变化值
+u16 interval_num ; //发射间隔计数，变化值
 u16 gps_invalid; //gps失效的次数时间
 //u16 gps_invalid_num; //失效次数值
 //u16 time_o;//GPS前次时间存储

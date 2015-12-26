@@ -5,6 +5,5 @@
 void BackupRegisterInit(void);
 void Enter_PowersaveMode(void);
 u8 GetBatteryPower(void);
-void SendBetteryLow(void);
 
 #endif 

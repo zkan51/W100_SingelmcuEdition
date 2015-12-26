@@ -285,37 +285,75 @@ void TIM3_IRQHandler(void)
 							//判断是否要开GPS，GPS 3分钟开一次
 							if(swchflag == 2)
 							{
-									if(interval_num == interval_s)
-									{
-											interval_num=0;
-											BKP_WriteBackupRegister(BKP_DR1,interval_num);
+								  if (interval_num == 0) // 开GPS
+										{
+											  GPS_ON();
+											  if (battery >= BATTERYLEVEL)
+											  TIM4_ON();
+											  tim2_cnt = 0;
+											  TIM2_Configuration();
+											  interval_num++;
+											  if (intervalA == 0)
+														  interval_num = 0;
+											  BKP_WriteBackupRegister(BKP_DR1,interval_num);
+										}
+										else  //GPS 距上次开启未满3分钟
+										{
+											  if (intervalA == 5) // 发送间隔30s
+													{
+														  interval_num++;
+														  if (interval_num == 4)
+																	  interval_num = 0;
+																BKP_WriteBackupRegister(BKP_DR1,interval_num);
+																RTC_Init();
+																PWR_WakeUpPinCmd(ENABLE);
+																PWR_EnterSTANDBYMode();
+													} 
+													else if (intervalA == 2)  // 发送间隔为1分钟
+													{
+														 	interval_num++;
+														  if (interval_num == 2)
+																	  interval_num = 0;
+																BKP_WriteBackupRegister(BKP_DR1,interval_num);
+																RTC_Init();
+																PWR_WakeUpPinCmd(ENABLE);
+																PWR_EnterSTANDBYMode();
+													}
+													else 
+													{
+													}
+										}
+//									if(interval_num == intervalA)
+//									{
+//											interval_num=0;
+//											BKP_WriteBackupRegister(BKP_DR1,interval_num);
 
-											GPS_ON();
-											TIM4_ON();
-											TIM2_Configuration();
-									}
-									else if(interval_num > interval_s)
-									{	
-											interval_num = 0;
-											BKP_WriteBackupRegister(BKP_DR1,interval_num);
-											if(charging_flag == off)
-											{
-													RTC_Init();
-													PWR_WakeUpPinCmd(ENABLE);
-													PWR_EnterSTANDBYMode();
-											}
-									}
-									else //<5
-									{
-											interval_num++;
-											BKP_WriteBackupRegister(BKP_DR1,interval_num);
-											if(charging_flag == off)
-											{
-													RTC_Init();
-													PWR_WakeUpPinCmd(ENABLE);
-													PWR_EnterSTANDBYMode();
-											}
-									}
+//											GPS_ON();
+//											TIM4_ON();
+//											TIM2_Configuration();
+//									}
+//									else if(interval_num > intervalA)
+//									{	
+//											interval_num = 0;
+//											BKP_WriteBackupRegister(BKP_DR1,interval_num);
+//											if(charging_flag == off)
+//											{
+//													RTC_Init();
+//													PWR_WakeUpPinCmd(ENABLE);
+//													PWR_EnterSTANDBYMode();
+//											}
+//									}
+//									else //<5
+//									{
+//											interval_num++;
+//											BKP_WriteBackupRegister(BKP_DR1,interval_num);
+//											if(charging_flag == off)
+//											{
+//													RTC_Init();
+//													PWR_WakeUpPinCmd(ENABLE);
+//													PWR_EnterSTANDBYMode();
+//											}
+//									}
 							}
 						
 					}
@@ -333,13 +371,33 @@ void TIM2_IRQHandler(void)
 {
 	if( TIM_GetITStatus(TIM2 , TIM_IT_Update) != RESET ) 
 	{
-		
 		tim2_cnt++;
+//		
+//		// 搜GPS时间超过发送间隔 就发送消息
+//		switch (intervalA)
+//		{
+//					case 5:
+//										if(tim2_cnt == 30 || tim2_cnt == 60 || tim2_cnt == 90)
+//										{
+//											//发送消息
+//										}
+//						    break;
+//										
+//					case 2:
+//										if (tim2_cnt == 60)
+//										{
+//											 //发送消息
+//										}
+//										break;
+//					default:
+//						    break;
+//		}
+		
+		// 搜GPS时间超过2分钟
 		if(tim2_cnt == gps_invalid)     //2min
 		{
 				TIM_Cmd(TIM2, DISABLE);
 				GPS_OFF();
-				tim2_cnt = 0;
 				LED_OFF();
 				TIM4_OFF();
 

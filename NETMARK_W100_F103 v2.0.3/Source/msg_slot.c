@@ -402,20 +402,31 @@ void send_on(void)
 		{
 				if(task_flag2==on)	//发射条件：上次任务完成
 				{
-								LedFlash();
-								TIM3_OFF();	//消息生成前关闭定时器T3
-								
-								task_flag1=off;
-								task_flag2=off;
-								
-								TIM3_CAM5_flag = 0;  //TIM3标记变量清零
-								TIM3_CAM3_flag= 0;
-								TIM3_CAM1_flag= 0;
-								
-								swchflag = 0;
-								tim3_cnt=0;
-								TIM3_Configuration();  //打开定时器T3
-					}
+							//获取电池电量
+							GetBatteryPower();
+
+							// 低电量判断
+							if(battery >= BATTERYLEVEL)
+							{
+									LedFlash();
+									LED_RED_OFF();
+							}
+							else
+							LED_RED_ON();
+							
+							TIM3_OFF();	//消息生成前关闭定时器T3
+							
+							task_flag1=off;
+							task_flag2=off;
+							
+							TIM3_CAM5_flag = 0;  //TIM3标记变量清零
+							TIM3_CAM3_flag= 0;
+							TIM3_CAM1_flag= 0;
+							
+							swchflag = 0;
+							tim3_cnt=0;
+							TIM3_Configuration();  //打开定时器T3
+				}
 		}
 		else //充电状态
 		{

@@ -24,7 +24,7 @@ int GPS_RMC_Parse(char *line, GPS_INFO *GPS)
 		if (status == 'A')  //如果数据有效，则分析
 		{
 			t_convert++;
-			if(t_convert==4)
+			if(t_convert==6)
 			{
 	// 			tx1buf[0]='$'; tx1buf[1]=0x1C; tx1buf[2]=0x01; //GPS有效指令
 	// 			com1sendback(); //
