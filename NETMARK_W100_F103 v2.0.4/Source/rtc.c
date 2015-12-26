@@ -101,10 +101,10 @@ static void RTC_Configuration(void)
 			RTC_SetAlarm(70);
 		break;
 		case 0:
-			RTC_SetAlarm(220);
+			RTC_SetAlarm(214);
 		break;
 		default:
-			RTC_SetAlarm(74);
+			RTC_SetAlarm(70);
 		break;
 	}
 	
