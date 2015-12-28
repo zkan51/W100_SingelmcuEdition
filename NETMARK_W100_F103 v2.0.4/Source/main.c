@@ -159,7 +159,7 @@ int main(void)
 										LED_OFF();
 										charging_flag = off; 
 										task_flag2 = on;
-										interval_num = interval_s;
+										interval_num = 0;
 						}
 				}
   }

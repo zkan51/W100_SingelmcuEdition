@@ -27,13 +27,8 @@ void CurrentTest(void) //电老化测试程序
 		
 		if( (GPIO_ReadInputDataBit(GPIOB,GPIO_Pin_12) != 0) || (GPIO_ReadInputDataBit(GPIOB,GPIO_Pin_14) != 0) )
 		{
-//			PWR_WakeUpPinCmd(ENABLE);
-//			PWR_EnterSTANDBYMode();
 			break;
 		}
-		
-// USART_SendData(USART1, 0x55);
-// while (!(USART1->SR & USART_FLAG_TXE)) ;
 		
 		RCC_APB1PeriphClockCmd(RCC_APB1Periph_USART2, DISABLE);
 		
@@ -111,13 +106,8 @@ void EjectTest(void)  //发射测试程序
 	{
 		if( (GPIO_ReadInputDataBit(GPIOB,GPIO_Pin_12) != 0) || (GPIO_ReadInputDataBit(GPIOB,GPIO_Pin_14) != 1) )
 		{
-//			PWR_WakeUpPinCmd(ENABLE);
-//			PWR_EnterSTANDBYMode();
 			break;
 		}
-		
-// USART_SendData(USART1, 0x5A);
-// while (!(USART1->SR & USART_FLAG_TXE)) ;
 		
 		PA_OFF();
 		GPS_OFF();

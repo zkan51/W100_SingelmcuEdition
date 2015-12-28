@@ -323,39 +323,7 @@ void TIM3_IRQHandler(void)
 													{
 													}
 										}
-//									if(interval_num == intervalA)
-//									{
-//											interval_num=0;
-//											BKP_WriteBackupRegister(BKP_DR1,interval_num);
-
-//											GPS_ON();
-//											TIM4_ON();
-//											TIM2_Configuration();
-//									}
-//									else if(interval_num > intervalA)
-//									{	
-//											interval_num = 0;
-//											BKP_WriteBackupRegister(BKP_DR1,interval_num);
-//											if(charging_flag == off)
-//											{
-//													RTC_Init();
-//													PWR_WakeUpPinCmd(ENABLE);
-//													PWR_EnterSTANDBYMode();
-//											}
-//									}
-//									else //<5
-//									{
-//											interval_num++;
-//											BKP_WriteBackupRegister(BKP_DR1,interval_num);
-//											if(charging_flag == off)
-//											{
-//													RTC_Init();
-//													PWR_WakeUpPinCmd(ENABLE);
-//													PWR_EnterSTANDBYMode();
-//											}
-//									}
 							}
-						
 					}
 			}
 			
@@ -372,27 +340,6 @@ void TIM2_IRQHandler(void)
 	if( TIM_GetITStatus(TIM2 , TIM_IT_Update) != RESET ) 
 	{
 		tim2_cnt++;
-//		
-//		// 搜GPS时间超过发送间隔 就发送消息
-//		switch (intervalA)
-//		{
-//					case 5:
-//										if(tim2_cnt == 30 || tim2_cnt == 60 || tim2_cnt == 90)
-//										{
-//											//发送消息
-//										}
-//						    break;
-//										
-//					case 2:
-//										if (tim2_cnt == 60)
-//										{
-//											 //发送消息
-//										}
-//										break;
-//					default:
-//						    break;
-//		}
-		
 		// 搜GPS时间超过2分钟
 		if(tim2_cnt == gps_invalid)     //2min
 		{
