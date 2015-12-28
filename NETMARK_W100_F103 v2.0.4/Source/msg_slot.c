@@ -406,13 +406,7 @@ void send_on(void)
 							GetBatteryPower();
 
 							// 低电量判断
-							if(battery >= BATTERYLEVEL)
-							{
-									LedFlash();
-									LED_RED_OFF();
-							}
-							else
-							LED_RED_ON();
+					  LedFlash();
 							
 							TIM3_OFF();	//消息生成前关闭定时器T3
 							

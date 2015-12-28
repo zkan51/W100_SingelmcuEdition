@@ -106,7 +106,6 @@ void Delay(__IO u32 nCount)
 #define SysCtrl_SLEEPDEEP_Set    ((uint32_t)0x00000004)
 
 extern u8 swchflag;
-
 u8 openflag; //开机
 
 int main(void)
@@ -122,7 +121,7 @@ int main(void)
 	USART1_Config(); //读写码接口
 	USART2_Config(); //GPS接收
 	//USART3_Config(); //24LE1通信接口
-	TIM4_Configuration();
+	//TIM4_Configuration();
 	Adc_Init();
 	Delay(0xff);
 

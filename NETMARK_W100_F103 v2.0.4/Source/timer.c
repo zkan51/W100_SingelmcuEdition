@@ -39,14 +39,14 @@ void TIM3_Configuration(void)
 {
     TIM_TimeBaseInitTypeDef  TIM_TimeBaseStructure;
     RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM3 , ENABLE);
-	TIM3_NVIC_Configuration();
+	   TIM3_NVIC_Configuration();
 	
     TIM_DeInit(TIM3);
     TIM_TimeBaseStructure.TIM_Period=99;		 								
     TIM_TimeBaseStructure.TIM_Prescaler= 9;			//48M/(9+1)*(99+1)=48KHz=9.6K*5的频率进入中断  
     TIM_TimeBaseStructure.TIM_ClockDivision=TIM_CKD_DIV1; 		
     TIM_TimeBaseStructure.TIM_CounterMode=TIM_CounterMode_Up; 
-		TIM_TimeBaseStructure.TIM_RepetitionCounter = 0;
+		  TIM_TimeBaseStructure.TIM_RepetitionCounter = 0;
     TIM_TimeBaseInit(TIM3, &TIM_TimeBaseStructure);
 
 	 TIM_ITConfig(TIM3, TIM_IT_Update , ENABLE);	
@@ -118,7 +118,7 @@ void TIM4_Configuration(void)
 		NVIC_InitStructure.NVIC_IRQChannelCmd=ENABLE;
 		NVIC_Init(&NVIC_InitStructure);
 		
-		//TIM_Cmd(TIM4, ENABLE);
+		TIM_Cmd(TIM4, ENABLE);
 }
 
 /***********************************************************
@@ -288,8 +288,8 @@ void TIM3_IRQHandler(void)
 								  if (interval_num == 0) // 开GPS
 										{
 											  GPS_ON();
-											  if (battery >= BATTERYLEVEL)
-											  TIM4_ON();
+											  //TIM4_ON();
+											  TIM4_Configuration();
 											  tim2_cnt = 0;
 											  TIM2_Configuration();
 											  interval_num++;
@@ -367,16 +367,32 @@ void TIM4_IRQHandler(void)
 {
 	if (TIM_GetITStatus(TIM4, TIM_IT_Update) != RESET)
 	{
-			if(time4flag == 0)
-			{ 
-					LED_ON();
-					time4flag = 1;
-			}
-			else
-			{    
-					LED_OFF();
-					time4flag = 0;
-			}
+		  if(battery >= BATTERYLEVEL)
+				{
+					 if(time4flag == 0)
+						{
+								LED_ON();
+						  time4flag = 1;
+						}
+						else 
+						{
+								LED_OFF();
+							 time4flag = 0;
+						}
+				}
+				else 
+				{
+					 if(time4flag == 0)
+						{
+								LED_RED_ON();
+						  time4flag = 1;
+						}
+						else 
+						{
+								LED_RED_OFF();
+							 time4flag = 0;
+						}
+				}
 			TIM_ClearITPendingBit(TIM4, TIM_IT_Update);
 	}
 }
