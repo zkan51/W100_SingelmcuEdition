@@ -36,7 +36,7 @@ void CurrentTest(void) //电老化测试程序
 		GPS_ON();  //GPS一直打开
 			
 		PLL_ON();
-		//LED_ON();
+		LED_ON();
 		Delay(0xff);Delay(0xff);
 		Delay(0xff);Delay(0xff);
 		Delay(0xff);Delay(0xff);  //共354us Delay //Delay(0xff)：59us
@@ -67,7 +67,7 @@ void CurrentTest(void) //电老化测试程序
 		}
 		
 		PLL_OFF();
-		//LED_OFF();
+		LED_OFF();
   		
 		Delay(0xff);Delay(0xff);
 		Delay(0xff);Delay(0xff);
