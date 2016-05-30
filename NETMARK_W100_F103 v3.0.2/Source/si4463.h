@@ -5,6 +5,7 @@
 #include "spi.h"
 
 #include "radio_config_Si4463_GMSK_v0.0.6.1.h" // TX_FIFO门限设置为40
+#include "radio_config_Si4060_162025M.h"
 
 #define SI4463
 //------NIRQ, SDN, CSN(即NSEL)在si4463.c的SI4463_IOSET()中配置------
@@ -36,6 +37,7 @@ void SI446X_CMD(u8 *cmd, u8 cmdsize);
 void SI4463_Init(void);
 void SI446X_RESET(void);
 void SI446X_CONFIG_INIT(void);
+void SI446X_SINGLE_FREQ_CONFIG_INIT(void);
 void SI446X_PART_INFO(u8 *buffer);
 void SI446X_FUNC_INFO(u8 *buffer);
 void SI446X_RX_FIFO_RESET(void);

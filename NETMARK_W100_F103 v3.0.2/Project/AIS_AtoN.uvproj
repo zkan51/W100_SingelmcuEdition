@@ -423,11 +423,6 @@
               <FilePath>..\Source\timer.c</FilePath>
             </File>
             <File>
-              <FileName>SKY72310.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Source\SKY72310.c</FilePath>
-            </File>
-            <File>
               <FileName>stm32f10x_it.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Source\stm32f10x_it.c</FilePath>

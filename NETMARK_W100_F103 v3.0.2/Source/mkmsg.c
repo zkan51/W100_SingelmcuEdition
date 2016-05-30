@@ -42,7 +42,7 @@ void msg18(void)
 	msg[12] = (weidu) >> 8;
 	msg[13] = (weidu) >> 0;
 	msg[14] = (u8)(direction >> 4); //0xE1;	   //COG:3600 高8bit
-	msg[15] = (u8)(direction << 4)|0x0F; //0x40 + (u8)(direction >> 5);		   //COG高4位 + 实际航向高4位 实际航向设置为全0
+	msg[15] = (u8)(direction << 4)|0x0F; //0x40 + (u8)(direction >> 5);		   //COG高4位 + 实际航向高4位 实际航向设置为511
 	msg[16] = 0xFF; //(u8)(direction << 3) + 0x07;		   //实际航向的低5位+时间戳高3bit.实际航向和时间戳都不可用
 	msg[17] = 0x84;	   //时间戳低3bit:100;备用2bit:00;B类装置标志1bit:1;B类显示器标志1bit:0;B类DSC标志: 0  
 	msg[18] = 0x08+((slot_increacement>>12)&0x01); // B类带宽标志： 0；通信状态高3bit:000  ITDMA

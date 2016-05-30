@@ -50,7 +50,7 @@ u16 gps_invalid; //gps失效的次数时间
 u16 intervalA;  //间隔计数次数 固定值
 u16 intervalB;  //间隔计数次数 超时值
 u8 cogsel=0; //流网或张网选择变量 默认0=流网
-u8 txBuf[64]={0};
+u8 txBuf[64]={0}; //发送AIS消息数组
 
 //union dds_union dds_word_update[16][5]={0x00000000};  //矫正更新后的频率字查找表
 
@@ -103,7 +103,7 @@ int main(void)
 	GPIOA->CRL&=0XFFFFFFF0;//PA0设置成输入
 	GPIOA->CRL|=0X00000008;
 	
- stm32_init();  //GPIO
+ GPIO_Configuration();  //GPIO
 	USART1_Config(); //读写码接口
 	USART2_Config(); //GPS接收
 	//USART3_Config(); //24LE1通信接口
@@ -126,8 +126,8 @@ int main(void)
 	SI4463_OFF();
 	LED_OFF();	
 	
-	// si4463初始化
 	delay_init();		// 实现精确延时函数
+	// si4463初始化
 	SPI1_Init();			// IO模拟SPI
 	SI4463_IOSET();	
 	

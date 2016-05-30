@@ -34,9 +34,6 @@ void GPIO_Configuration(void);
 //Configures the NVIC and Vector Table base address.
 //void NVIC_Configuration(void);
 
-//initial stm32
-void stm32_init(void);
-
 void SYS_CLK_UP(void);
 void SYS_CLK_DOWN(void);
 

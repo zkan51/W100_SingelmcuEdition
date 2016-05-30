@@ -3,11 +3,12 @@
 
 //4463初始化参数
 u8 config_table[] = RADIO_CONFIGURATION_DATA_ARRAY ; 
+u8 sigle_freq_config_table[] = SINGLE_FREQ_RADIO_CONFIGURATION_DATA_ARRAY;
 /*
 =================================================================================
 SI4463_IOSET()
 Function : 4463用IO口（不包括SPI）配置
-		   PA4 = NSEL_CSN 输出， PC13 = SI_SDN 输出, PA0 = SI_NIRQ(输入)	
+		   PA5 = NSEL_CSN 输出，PA11 = si4463使能角, PB13 = SI_NIRQ(输入)	
 INTPUT   : NONE
 OUTPUT   : NONE
 =================================================================================
@@ -18,12 +19,11 @@ void SI4463_IOSET(void)
 	RCC_APB2PeriphClockCmd(	RCC_APB2Periph_GPIOA|RCC_APB2Periph_GPIOB, ENABLE );//A,B时钟使能 
 
 	// PA5
-	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_4 | GPIO_Pin_5;  // PA5 = NSEL CSN 推挽 
+	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_5;  // PA5 = NSEL CSN 推挽 
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;  //推挽输出
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 	GPIO_Init(GPIOA, &GPIO_InitStructure);
 	GPIO_SetBits(GPIOA,GPIO_Pin_5);
-	GPIO_ResetBits(GPIOA,GPIO_Pin_4);
 	
 	// PB13
 	GPIO_InitStructure.GPIO_Pin   = GPIO_Pin_13;
@@ -31,7 +31,7 @@ void SI4463_IOSET(void)
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 	GPIO_Init(GPIOB, &GPIO_InitStructure);
 	
-	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_11;//GPIO_Pin_3控制LDO的开关   
+	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_11;//GPIO_Pin_11控制LDO的开关
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP ;  //
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 	GPIO_Init(GPIOA, &GPIO_InitStructure);
@@ -61,7 +61,7 @@ u8 SPI_ExchangeByte(u8 TxData)
 	  
 	  // 生成SCK时钟，空闲时SCK默认为低电平,时钟速率大概在0.4MHz左右（周期约2.5us）
       SI_SCK_HIGH;  //RF_SCK_HIGH(); 准备好SDO上的数据后，将SCK拉高，形成上升沿，然后在下一句读取SDI上的数据
-	  
+						delay_us(20);
 	  if(SI4463_SDI)
 		ret|=1; 
       SI_SCK_LOW;   //RF_SCK_LOW();  完成数据读取后，将时钟恢复为低电平
@@ -286,6 +286,51 @@ void SI446X_CONFIG_INIT(void)
 	//发射时必须： GDO2=1，GDO3=0
 	//接收时必须： GDO2=0，GDO3=1
 	SI446X_GPIO_CONFIG( 0, 0, 0x20, 0x21, 0, 0, 0 );//重要
+}
+/*
+=================================================================================
+SI446X_SINGLE_FREQ_CONFIG_INIT( );
+Function : configuration the device
+INTPUT   : NONE
+OUTPUT   : NONE
+=================================================================================
+*/
+void SI446X_SINGLE_FREQ_CONFIG_INIT(void)
+{
+	u8 i;
+    u16 j = 0;
+
+    while( ( i = sigle_freq_config_table[j] ) != 0 )
+    {
+        j += 1;		
+        SI446X_CMD( sigle_freq_config_table + j, i );		
+        j += i;
+    } 	
+#if PACKET_LENGTH > 0           //fixed packet length
+				SI446X_SET_PROPERTY_1( PKT_FIELD_1_LENGTH_7_0, PACKET_LENGTH );
+				SI446X_SET_PROPERTY_1( PKT_FIELD_1_CRC_CONFIG, 0xA2 );
+				SI446X_SET_PROPERTY_1( PKT_CRC_CONFIG, 0x05 );
+		
+#else                           //variable packet length
+    SI446X_SET_PROPERTY_1( PKT_CONFIG1, 0x00 );	
+    SI446X_SET_PROPERTY_1( PKT_CRC_CONFIG, 0x00 );
+    SI446X_SET_PROPERTY_1( PKT_LEN_FIELD_SOURCE, 0x01 );
+    SI446X_SET_PROPERTY_1( PKT_LEN, 0x2A );
+    SI446X_SET_PROPERTY_1( PKT_LEN_ADJUST, 0x00 );
+    SI446X_SET_PROPERTY_1( PKT_FIELD_1_LENGTH_12_8, 0x00 );
+    SI446X_SET_PROPERTY_1( PKT_FIELD_1_LENGTH_7_0, 0x01 );
+    SI446X_SET_PROPERTY_1( PKT_FIELD_1_CONFIG, 0x00 );
+    SI446X_SET_PROPERTY_1( PKT_FIELD_1_CRC_CONFIG, 0x00 );
+    SI446X_SET_PROPERTY_1( PKT_FIELD_2_LENGTH_12_8, 0x00 );
+    SI446X_SET_PROPERTY_1( PKT_FIELD_2_LENGTH_7_0, 0x10 );
+    SI446X_SET_PROPERTY_1( PKT_FIELD_2_CONFIG, 0x00 );
+    SI446X_SET_PROPERTY_1( PKT_FIELD_2_CRC_CONFIG, 0x00 );
+#endif //PACKET_LENGTH
+
+    //重要： 4463的GDO2，GDO3控制射频开关，  0X20 ,0X21 
+    //发射时必须： GDO2=1，GDO3=0
+    //接收时必须： GDO2=0，GDO3=1
+    SI446X_GPIO_CONFIG( 0, 0, 0x20, 0x21, 0, 0, 0 );//重要 	
 }
 /*
 =================================================================================

@@ -39,17 +39,17 @@ void TIM3_NVIC_Configuration(void)
  ***********************************************************/
 void TIM3_Configuration(void)
 {
-    TIM_TimeBaseInitTypeDef  TIM_TimeBaseStructure;
-    RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM3 , ENABLE);
-	   TIM3_NVIC_Configuration();
-	
-    TIM_DeInit(TIM3);
-    TIM_TimeBaseStructure.TIM_Period=99;		 								
-    TIM_TimeBaseStructure.TIM_Prescaler= 9;			//48M/(9+1)*(99+1)=48KHz=9.6K*5的频率进入中断  
-    TIM_TimeBaseStructure.TIM_ClockDivision=TIM_CKD_DIV1; 		
-    TIM_TimeBaseStructure.TIM_CounterMode=TIM_CounterMode_Up; 
-		  TIM_TimeBaseStructure.TIM_RepetitionCounter = 0;
-    TIM_TimeBaseInit(TIM3, &TIM_TimeBaseStructure);
+		TIM_TimeBaseInitTypeDef  TIM_TimeBaseStructure;
+		RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM3 , ENABLE);
+		TIM3_NVIC_Configuration();
+
+		TIM_DeInit(TIM3);
+		TIM_TimeBaseStructure.TIM_Period=99;		 								
+		TIM_TimeBaseStructure.TIM_Prescaler= 9;			//48M/(9+1)*(99+1)=9.6K*5的频率进入中断  
+		TIM_TimeBaseStructure.TIM_ClockDivision=TIM_CKD_DIV1; 		
+		TIM_TimeBaseStructure.TIM_CounterMode=TIM_CounterMode_Up; 
+		TIM_TimeBaseStructure.TIM_RepetitionCounter = 0;
+		TIM_TimeBaseInit(TIM3, &TIM_TimeBaseStructure);
 
 	 TIM_ITConfig(TIM3, TIM_IT_Update , ENABLE);	
 	 TIM_Cmd(TIM3, ENABLE);	/* 开启时钟 */ 
@@ -238,7 +238,7 @@ void TIM3_IRQHandler(void)
 			if(task_flag1==on)  
 			{	
 					//发送AIS消息
-					SI446X_SEND_PACKET( txBuf, txLen, flag_channel, condition, size_of_FIFO, tx_threshold);
+					SI446X_SEND_PACKET(txBuf, txLen, flag_channel, condition, size_of_FIFO, tx_threshold);
 				
 					task_flag1=off; //没有发送任务在执行
 					task_flag2=off;//发送任务完成

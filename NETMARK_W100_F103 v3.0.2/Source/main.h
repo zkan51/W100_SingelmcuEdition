@@ -11,7 +11,6 @@
 #include "usart1.h"
 #include "usart2.h"
 #include "usart3.h"
-#include "SKY72310.h"
 #include "msg_slot.h"
 #include "timer.h"
 #include "gps.h"
