@@ -92,9 +92,7 @@ ais_status charging_flag=off; //判断是否处于充电状态标志。默认off,不在充电状态
 //u8 rxbuf1[4] = {0x06,0x9F,0x6B,0xC7}; //temp////////////////////
 
 u8 gps_led_on = 0; //开机绿灯慢闪
-
 u8 battery; //电量等级
-static u8 IsCharge_num = 0; 
 void Delay(__IO u32 nCount)
 {
   for(; nCount != 0; nCount--);

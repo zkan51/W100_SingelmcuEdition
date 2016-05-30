@@ -2,16 +2,15 @@
 
 void ProgramSelector(void) //拨码器程序选择
 {
-	if(GPIO_ReadInputDataBit(GPIOB,GPIO_Pin_12)== 1)
+	if(Level_PB12 == Level_PB14)//正常工作
 	{
-// USART_SendData(USART1, 0x5B);
-// while (!(USART1->SR & USART_FLAG_TXE)) ;
+		
 	}	
-	else if( (GPIO_ReadInputDataBit(GPIOB,GPIO_Pin_12) == 0) && (GPIO_ReadInputDataBit(GPIOB,GPIO_Pin_14) == 0) )
+	else if(Level_PB12 == 1 && Level_PB14 == 0 )//电老化
 	{
 		CurrentTest();
 	}
-	else if( (GPIO_ReadInputDataBit(GPIOB,GPIO_Pin_12) == 0) && (GPIO_ReadInputDataBit(GPIOB,GPIO_Pin_14) == 1) )
+	else if(Level_PB12 == 0 && Level_PB14 == 1)//电性能
 	{
 		EjectTest();
 	}
@@ -25,7 +24,7 @@ void CurrentTest(void) //电老化测试程序
 	while(1)
 	{
 		
-		if( (GPIO_ReadInputDataBit(GPIOB,GPIO_Pin_12) != 0) || (GPIO_ReadInputDataBit(GPIOB,GPIO_Pin_14) != 0) )
+		if(Level_PB12 == 0 || Level_PB14 == 1)
 		{
 			break;
 		}
@@ -104,7 +103,7 @@ void EjectTest(void)  //发射测试程序
 	
 	while(1)
 	{
-		if( (GPIO_ReadInputDataBit(GPIOB,GPIO_Pin_12) != 0) || (GPIO_ReadInputDataBit(GPIOB,GPIO_Pin_14) != 1) )
+		if(Level_PB12 == 1 || Level_PB14 == 0)
 		{
 			break;
 		}
