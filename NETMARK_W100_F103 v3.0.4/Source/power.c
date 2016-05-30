@@ -8,7 +8,7 @@ void BackupRegisterInit(void)
 }
 	
 //进入待机模式
-void Enter_PowersaveMode(void)
+void Sys_Standby(void)
 {
 	if(!isCharging)
 	{
@@ -30,7 +30,6 @@ void chargingState(void)
 	sendTask = off;
 	GPS_OFF();
 	TIM2_OFF();
-	TIM3_OFF();
 	TIM4_OFF();
 
 	LED_ON();

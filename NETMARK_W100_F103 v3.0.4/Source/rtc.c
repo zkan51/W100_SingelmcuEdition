@@ -84,7 +84,7 @@ static void RTC_Configuration(void)
   RTC_WaitForLastTask();
 
   /* Set RTC prescaler: set RTC period to 1/37.5 sec ;make sure that the time of one counter is a AIS slot*/
-  RTC_SetPrescaler(32767); /* RTC period = RTCCLK/RTC_PR = (62.5 KHz)/(1666+1) */
+  RTC_SetPrescaler(32767); /* fTR_CLK = fRTCCLK/(PRL[19:0]+1)  = 40K/32768 = 1.22HZ =0.82s */
 	
 	/* Wait until last write operation on RTC registers has finished */
   RTC_WaitForLastTask();
@@ -95,16 +95,16 @@ static void RTC_Configuration(void)
 	switch(intervalA)  //根据flash里的间隔值，设置rtc唤醒间隔
 	{
 		case 5:
-			RTC_SetAlarm(33);
+			RTC_SetAlarm(36);//30S
 		break;
 		case 2:
-			RTC_SetAlarm(70);
+			RTC_SetAlarm(73);//1分钟
 		break;
 		case 0:
-			RTC_SetAlarm(214);
+			RTC_SetAlarm(219);//3分钟
 		break;
 		default:
-			RTC_SetAlarm(70);
+			RTC_SetAlarm(73);
 		break;
 	}
 	

@@ -35,8 +35,7 @@ void SI4463_IOSET(void)
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP ;  //
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 	GPIO_Init(GPIOA, &GPIO_InitStructure);
-	//GPIO_SetBits(GPIOA,GPIO_Pin_11);	
-	//delay_ms(20); 
+	GPIO_ResetBits(GPIOA,GPIO_Pin_11);	 
 } 
 /*
 =================================================================================

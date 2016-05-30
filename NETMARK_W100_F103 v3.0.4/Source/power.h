@@ -3,7 +3,7 @@
 #include "stm32f10x.h"
 
 void BackupRegisterInit(void);
-void Enter_PowersaveMode(void);
+void Sys_Standby(void);
 u8 GetBatteryPower(void);
 void chargingState(void);
 void ExitCharging(void);

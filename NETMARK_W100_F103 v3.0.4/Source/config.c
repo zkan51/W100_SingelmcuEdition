@@ -40,16 +40,19 @@ void GPIO_Configuration(void)
 		GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
 		GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 		GPIO_Init(GPIOA, &GPIO_InitStructure);
+		GPIO_ResetBits(GPIOA,GPIO_Pin_4);
 
 		GPIO_InitStructure.GPIO_Pin = GPIO_Pin_11;   //SI4463_power
 		GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
 		GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 		GPIO_Init(GPIOA, &GPIO_InitStructure);
- 
+		GPIO_ResetBits(GPIOA, GPIO_Pin_11);
+	
 		GPIO_InitStructure.GPIO_Pin = GPIO_Pin_5;   //gps_power
 		GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
 		GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 		GPIO_Init(GPIOB, &GPIO_InitStructure);
+		GPIO_ResetBits(GPIOB, GPIO_Pin_5);
 		
 		GPIO_InitStructure.GPIO_Pin = GPIO_Pin_12;   //switcher1
 		GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU;
@@ -60,23 +63,6 @@ void GPIO_Configuration(void)
 		GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU;
 		GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 		GPIO_Init(GPIOB, &GPIO_InitStructure);
-		
-		PA_OFF();
-		GPS_OFF();
-		SI4463_OFF();
-		if(isCharging == on)
-		{
-			LED_ON();
-			LED_RED_ON();
-		}
-		else
-		{
-			LED_OFF();
-			LED_RED_OFF();
-		}
-		
-		//GPS_ON();
-		////////////////////////////////////////
 }
 
 /**********************************************************

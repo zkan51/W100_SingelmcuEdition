@@ -194,17 +194,11 @@ void TIM2_IRQHandler(void)
 		// 搜GPS时间超过2分钟
 		if(tim2_cnt == gps_invalid)     //2min
 		{
-				TIM_Cmd(TIM2, DISABLE);
-				GPS_OFF();
-				LED_OFF();
-				TIM4_OFF();
-
-			 if(!isCharging)
-			 {		
-						RTC_Init();
-						PWR_WakeUpPinCmd(ENABLE);
-						PWR_EnterSTANDBYMode();
-			 }
+			TIM2_OFF();
+			GPS_OFF();
+			LED_OFF();
+			TIM4_OFF();
+   Sys_Standby();
 		}
 				
 		TIM_ClearITPendingBit(TIM2 , TIM_FLAG_Update);
@@ -242,8 +236,7 @@ void TIM4_IRQHandler(void)
 			}
 			led_state = !led_state;
 		}
-			
-			TIM_ClearITPendingBit(TIM4, TIM_IT_Update);
+		TIM_ClearITPendingBit(TIM4, TIM_IT_Update);
 	}
 }
 

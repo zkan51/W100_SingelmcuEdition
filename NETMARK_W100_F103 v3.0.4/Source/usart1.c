@@ -482,10 +482,10 @@ void Usart1GetCommand(void)  //串口1接收
 												Time = 0xFFFFFFFF; // 经销商信息
 												for(i=0; i<15; i++)
 												AgencyName[i] = 0xFF;
-												WriteFalsh_AgencyInfo();												
+												WriteFalsh_AgencyInfo();		
+												
 												tx1bufInfo(0x0C,0x01);
 												com1sendback();
-												//经销商名 待加
 											}
 								}
 								break;
@@ -498,8 +498,6 @@ void Usart1GetCommand(void)  //串口1接收
 											intervalA = intervalA << 8;
 											intervalA = intervalA + com1_rxbuf[7];
 										
-											interval_num = intervalA;
-											interval_s = intervalA;
 											WriteflashMPeriod();
 											ReadflashMPeriod();
 						
@@ -543,7 +541,15 @@ void Usart1GetCommand(void)  //串口1接收
 									
 										for(i=3;i<18;i++)   
 												tx1buf[i]=0x00;
-									
+										
+										//时间未注入,判断经销商是不是第一次写码操作
+									 if((u8)Time == 0xff) 
+											tx1buf[3] = 1;
+										else 
+											tx1buf[3] = 0;
+										
+										for(i=4;i<18;i++)   
+												tx1buf[i]=0x00;									
 										com1sendback();
 									}
 								}
@@ -565,24 +571,17 @@ void Usart1GetCommand(void)  //串口1接收
 
 			case 0x2A: //流网或张网选择
 								{
-										if(isCharging == on)
-										{
-												if(com1_rxbuf[2] == 0x01) 
-													 cogsel = 1;
-												else
-													 cogsel = 0;
-												
-												Write_Flash_Cogsel();
-												
-												tx1buf[0] = '$';
-												tx1buf[1] = 0x2A; 
-												tx1buf[2] = 0x01;
-												
-												for(i=3;i<18;i++)  
-  												tx1buf[i]=0x00; 
-												
-												com1sendback();
-										}
+									if(isCharging == on)
+									{
+											if(com1_rxbuf[2] == 0x01) 
+													cogsel = 1;
+											else
+													cogsel = 0;
+											
+											Write_Flash_Cogsel();
+											tx1bufInfo(0x2A,0x01);
+											com1sendback();
+									}
 								}
 								break;
 			
@@ -594,12 +593,7 @@ void Usart1GetCommand(void)  //串口1接收
 												boatwidth = com1_rxbuf[4];
 												
 												WriteflashBoatInfo();
-												tx1buf[0] = '$';
-												tx1buf[1] = 0x2B; 
-												tx1buf[2] = 0x01;
-												for(i=3;i<18;i++)   
-															tx1buf[i]=0x00;
-												
+												tx1bufInfo(0x2B,0x01);
 												com1sendback();
 										}
 								}
@@ -607,57 +601,62 @@ void Usart1GetCommand(void)  //串口1接收
 								
 		case 0x30: //经销商信息注入
 						 {
-								if(com1_rxbuf[2]==0)
+								if(isCharging == on)
 								{
-									Time = 0;
-									Time += (com1_rxbuf[3]<<24);
-									Time += (com1_rxbuf[4]<<16);
-									Time += (com1_rxbuf[5]<<8);
-									Time += com1_rxbuf[6];
-									
-									tx1bufInfo(0x30,0x01);
-									com1sendback();
-								}
-								else
-								{
-									for(i=3;i<18;i++)
-										AgencyName[i-3] = com1_rxbuf[i];
-									
+									if(com1_rxbuf[2]==0)
+									{
+										Time = 0;
+										Time += (com1_rxbuf[3]<<24);
+										Time += (com1_rxbuf[4]<<16);
+										Time += (com1_rxbuf[5]<<8);
+										Time += com1_rxbuf[6];
+										
 										tx1bufInfo(0x30,0x01);
 										com1sendback();
-									
-								 	WriteFalsh_AgencyInfo();
+									}
+									else
+									{
+										for(i=3;i<18;i++)
+											AgencyName[i-3] = com1_rxbuf[i];
+										
+											tx1bufInfo(0x30,0x01);
+											com1sendback();
+										
+											WriteFalsh_AgencyInfo();
+									}
 								}
-								
 							}
 							break;
 		
 		case 0x31://经销商信息读取
 							{
-								ReadFalsh_AgencyInfo();
-								
-								if(com1_rxbuf[2] == 1)//读取时间
+								if(isCharging == on)
 								{
-									tx1buf[0] = '$';
-									tx1buf[1] = 0x31;
-									tx1buf[2] = 0x01;
-									tx1buf[3] = Time>>24;
-									tx1buf[4] = Time>>16;
-									tx1buf[5] = Time>>8;
-									tx1buf[6] = Time;
+									ReadFalsh_AgencyInfo();
 									
-									for(i=7;i<18;i++)
-										tx1buf[i] = 0;
-									com1sendback();
-								}
-						 	else //读取名字
-								{
-									tx1buf[0] = '$';
-									tx1buf[1] = 0x31;
-									tx1buf[2] = 0x02;
-									for(i=0;i<18;i++)
-										tx1buf[i+3] = AgencyName[i];
-									com1sendback();
+									if(com1_rxbuf[2] == 1)//读取时间
+									{
+										tx1buf[0] = '$';
+										tx1buf[1] = 0x31;
+										tx1buf[2] = 0x01;
+										tx1buf[3] = Time>>24;
+										tx1buf[4] = Time>>16;
+										tx1buf[5] = Time>>8;
+										tx1buf[6] = Time;
+										
+										for(i=7;i<18;i++)
+											tx1buf[i] = 0;
+										com1sendback();
+									}
+									else //读取名字
+									{
+										tx1buf[0] = '$';
+										tx1buf[1] = 0x31;
+										tx1buf[2] = 0x02;
+										for(i=0;i<18;i++)
+											tx1buf[i+3] = AgencyName[i];
+										com1sendback();
+									}
 								}
 							}
 							break;			

@@ -30,7 +30,7 @@ void GPSIsOn(void)
 							if (interval_num == 4)
 										interval_num = 0;
 							BKP_WriteBackupRegister(BKP_DR1,interval_num);
-							Enter_PowersaveMode();
+							Sys_Standby();
 					} 
 					else if (intervalA == 2)  // 发送间隔为1分钟
 					{
@@ -38,10 +38,7 @@ void GPSIsOn(void)
 							if (interval_num == 2)
 										interval_num = 0;
 							BKP_WriteBackupRegister(BKP_DR1,interval_num);
-							Enter_PowersaveMode();
-					}
-					else 
-					{
+							Sys_Standby();
 					}
 		}
 }
@@ -146,7 +143,7 @@ int GPS_RMC_Parse(char *line, GPS_INFO *GPS)
 				TIM2_OFF();
 				TIM4_OFF();
 				LED_OFF();
-				Enter_PowersaveMode();
+				Sys_Standby();
 		 }
 		}
 		

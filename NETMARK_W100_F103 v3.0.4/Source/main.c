@@ -68,6 +68,11 @@ void Delay(__IO u32 nCount)
   for(; nCount != 0; nCount--);
 }
 
+//static u16 txLen = 0;
+//static u8 condition  = 0x30; // 发射完成后，返回ready状态
+//static u8 size_of_FIFO = 64; // 芯片中发射FIFO的容量为64 bytes
+//static u8 tx_threshold = 40; // FIFO中空出的空间达到40 bytes时，产生TFAE中断
+
 //经销商信息
 unsigned long Time;
 u8 AgencyName[16]={0};
@@ -102,19 +107,61 @@ int main(void)
 	// si4463初始化
 	SPI1IO_Init();			      // IO模拟SPI
 	SI4463_IOSET();	
+	
 	while(1)
  {	
-			ProgramSelector();  //拨码开关
-			if(!isCharging)     //只有在非充电状态下才发送AIS消息
-			{
-					send_on();
-			}
-			else                //进入充电状态
-			{
-				chargingState();
-				while(isCharging);
-				ExitCharging();
-			}
+//		LedFlash();
+//		
+//		SI4463_ON();
+//		delay_ms(20);
+//		SI446X_CONFIG_INIT();//配置4463芯片参数
+//		
+//		for(swchflag=0; swchflag<2; swchflag++)
+//		{
+//			if(swchflag == 0)//消息18
+//			{
+//				txLen = 32;   //发送AIS消息数组的长度
+//				msg_send18(); //生成消息18
+//				PA_ON();      //打开功放
+//				delay_us(500); 
+//				
+//				SI446X_SEND_PACKET(txBuf, txLen, flag_channel, condition, size_of_FIFO, tx_threshold);
+//USART_SendData(USART1,0x01);
+//while(!(USART1->SR & USART_FLAG_TXE));
+//				//PA_OFF();
+//			}
+//			else         	 //消息24A+24B
+//			{
+//				flag_channel = (1-flag_channel);  //选择发送通道，0：161.975 ，1：162.025
+//				Write_TX_Channel();
+//				txLen = 64;
+//				msg_send24();       //生成消息24A+24B
+//				//PA_ON();
+//				delay_us(500); 
+//				
+//				SI446X_SEND_PACKET(txBuf, txLen, flag_channel, condition, size_of_FIFO, tx_threshold);
+//USART_SendData(USART1,0x02);
+//while(!(USART1->SR & USART_FLAG_TXE));				
+//				PA_OFF();
+//			}
+//		}
+//		
+//		SI4463_OFF();
+//		
+//		delay_ms(1000);
+//		delay_ms(1000);
+		//LedFlash();
+		//ProgramSelector();  //拨码开关
+		if(!isCharging)     //只有在非充电状态下才发送AIS消息
+		{
+			send_on();
+		}
+		else                //进入充电状态
+		{
+			chargingState();
+			while(isCharging);
+			ExitCharging();
+		}
  }
 }
 
