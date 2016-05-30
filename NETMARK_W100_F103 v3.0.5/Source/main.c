@@ -110,48 +110,6 @@ int main(void)
 	
 	while(1)
  {	
-//		LedFlash();
-//		
-//		SI4463_ON();
-//		delay_ms(20);
-//		SI446X_CONFIG_INIT();//配置4463芯片参数
-//		
-//		for(swchflag=0; swchflag<2; swchflag++)
-//		{
-//			if(swchflag == 0)//消息18
-//			{
-//				txLen = 32;   //发送AIS消息数组的长度
-//				msg_send18(); //生成消息18
-//				PA_ON();      //打开功放
-//				delay_us(500); 
-//				
-//				SI446X_SEND_PACKET(txBuf, txLen, flag_channel, condition, size_of_FIFO, tx_threshold);
-//USART_SendData(USART1,0x01);
-//while(!(USART1->SR & USART_FLAG_TXE));
-//				//PA_OFF();
-//			}
-//			else         	 //消息24A+24B
-//			{
-//				flag_channel = (1-flag_channel);  //选择发送通道，0：161.975 ，1：162.025
-//				Write_TX_Channel();
-//				txLen = 64;
-//				msg_send24();       //生成消息24A+24B
-//				//PA_ON();
-//				delay_us(500); 
-//				
-//				SI446X_SEND_PACKET(txBuf, txLen, flag_channel, condition, size_of_FIFO, tx_threshold);
-//USART_SendData(USART1,0x02);
-//while(!(USART1->SR & USART_FLAG_TXE));				
-//				PA_OFF();
-//			}
-//		}
-//		
-//		SI4463_OFF();
-//		
-//		delay_ms(1000);
-//		delay_ms(1000);
-		//LedFlash();
-		//ProgramSelector();  //拨码开关
 		if(!isCharging)     //只有在非充电状态下才发送AIS消息
 		{
 			send_on();

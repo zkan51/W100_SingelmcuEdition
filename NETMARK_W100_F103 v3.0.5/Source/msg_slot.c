@@ -249,49 +249,31 @@ void send_on(void)
 	{
 		//¡¡µ∆1s
 		LedFlash();
+		SI4463_ON();
+		delay_ms(20);
+		SI446X_CONFIG_INIT();//≈‰÷√4463–æ∆¨≤Œ ˝
 		for(swchflag=0; swchflag<2; swchflag++)
 		{
 			if(swchflag == 0)//œ˚œ¢18
 			{
-				SI4463_ON();
-				delay_ms(20);
-				SI446X_CONFIG_INIT();//≈‰÷√4463–æ∆¨≤Œ ˝
-				
 				txLen = 32;   //∑¢ÀÕAISœ˚œ¢ ˝◊Èµƒ≥§∂»
 				msg_send18(); //…˙≥…œ˚œ¢18
 				PA_ON();      //¥Úø™π¶∑≈
-				delay_us(500); 
+				delay_ms(50); 
 				
-				SI446X_SEND_PACKET(txBuf, txLen, flag_channel, condition, size_of_FIFO, tx_threshold);
-				
-//USART_SendData(USART1,0x01);
-//while(!(USART1->SR & USART_FLAG_TXE));
-				
-				PA_OFF();
-				SI4463_OFF();
+				SI446X_SEND_PACKET(txBuf, txLen, flag_channel, condition, size_of_FIFO, tx_threshold);		
 			}
 			else         	 //œ˚œ¢24A+24B
 			{
-				
-				SI4463_ON();
-				delay_ms(20);
-				SI446X_CONFIG_INIT();//≈‰÷√4463–æ∆¨≤Œ 				
 				
 				flag_channel = (1-flag_channel);  //—°‘Ò∑¢ÀÕÕ®µ¿£¨0£∫161.975 £¨1£∫162.025
 				Write_TX_Channel();
 				txLen = 64;
 				msg_send24();       //…˙≥…œ˚œ¢24A+24B
-				PA_ON();
-				delay_us(500); 
-				
-//USART_SendData(USART1,txLen);
-//while(!(USART1->SR & USART_FLAG_TXE));
+				delay_ms(50); 
 				
 				SI446X_SEND_PACKET(txBuf, txLen, flag_channel, condition, size_of_FIFO, tx_threshold);
-				
-//USART_SendData(USART1,0x03);
-//while(!(USART1->SR & USART_FLAG_TXE));
-				
+			
 				PA_OFF();
 			}
 		}
