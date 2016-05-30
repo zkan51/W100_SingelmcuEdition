@@ -136,7 +136,7 @@ uint16_t Get_RTC_Counter(void)
 
 void RTC_Enter_StandbyMode(void)
 {
-	switch(interval_s)  //根据flash里的间隔值，设置rtc唤醒间隔
+	switch(intervalA)  //根据flash里的间隔值，设置rtc唤醒间隔
 	{
 		case 5:
 			RTC_SetAlarm(35);

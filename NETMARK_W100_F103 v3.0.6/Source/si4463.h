@@ -48,6 +48,6 @@ void SI446X_WRITE_TX_FIFO(void);
 void SI446X_INT_STATUS( u8 *buffer );
 void SI446X_GET_PROPERTY(u8 GROUP, u8 NUM_PROPS, u8 START_PROP, u8* buffer );
 void SI4463_IOSET(void);	
-
+void SI4463_OFF(void);
 
 #endif

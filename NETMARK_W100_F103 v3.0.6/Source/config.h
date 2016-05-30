@@ -11,7 +11,7 @@ typedef unsigned short UINT16;
 typedef unsigned char  UINT8;
 
 #define SI4463_ON()       GPIO_SetBits(GPIOA, GPIO_Pin_11) 			//SI4463开
-#define SI4463_OFF()      GPIO_ResetBits(GPIOA, GPIO_Pin_11)  //SI4463关
+//#define SI4463_OFF()      GPIO_ResetBits(GPIOA, GPIO_Pin_11)  //SI4463关
 
 #define GPS_ON()       GPIO_SetBits(GPIOB, GPIO_Pin_5) //GPS开
 #define GPS_OFF()      GPIO_ResetBits(GPIOB, GPIO_Pin_5)  //GPS关

@@ -22,7 +22,6 @@
 #include "adc.h"
 #include "led.h"
 #include "test.h"
-#include "Lowpower.h"
 #include "si4463.h"
 
 void Delay(__IO u32 nCount);

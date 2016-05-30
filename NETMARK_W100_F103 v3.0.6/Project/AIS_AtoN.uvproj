@@ -493,11 +493,6 @@
               <FilePath>..\Source\test.c</FilePath>
             </File>
             <File>
-              <FileName>Lowpower.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Source\Lowpower.c</FilePath>
-            </File>
-            <File>
               <FileName>si4463.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Source\si4463.c</FilePath>

@@ -1,3 +1,4 @@
+#include "main.h"
 #include "si4463.h"
 #ifdef SI4463
 
@@ -60,7 +61,6 @@ u8 SPI_ExchangeByte(u8 TxData)
 
 // 生成SCK时钟，空闲时SCK默认为低电平,时钟速率大概在0.4MHz左右（周期约2.5us）
 			SI_SCK_HIGH;  //RF_SCK_HIGH(); 准备好SDO上的数据后，将SCK拉高，形成上升沿，然后在下一句读取SDI上的数据
-			delay_us(20);
 			if(SI4463_SDI)
 				ret|=1; 
 			SI_SCK_LOW;   //RF_SCK_LOW();  完成数据读取后，将时钟恢复为低电平
@@ -519,6 +519,8 @@ void SI446X_SEND_PACKET( u8 *txbuffer, u16 size, u8 channel, u8 condition,\
 		while( size -- ) { SPI_ExchangeByte( *txbuffer++ ); }
 		SI_CSN_HIGH;
 		
+		PA_ON(); //  打开功放
+		delay_ms(4);
 		// 设置发射参数
 		cmd[0] = START_TX;
 		cmd[1] = channel;
@@ -543,6 +545,7 @@ void SI446X_SEND_PACKET( u8 *txbuffer, u16 size, u8 channel, u8 condition,\
 			SI446X_INT_STATUS(int_status_buf);		// 读取中断状态并清空中断Pending
 		}while( (int_status_buf[4]&0x20) != 0x20 ); // 轮询PACKET_SENT中断
 		
+		PA_OFF();//关闭功放
 		// 回到“ready”状态
 		cmd[0] = CHANGE_STATE;
 		cmd[1] = 0x03;
@@ -654,3 +657,14 @@ void Test_Printf(u8 name[20], u8 buf[], u8 length)
 															   
 
 #endif
+
+//关闭4463电源并且将跟4463相连的所有引脚电平拉低
+void SI4463_OFF()
+{
+	GPIO_ResetBits(GPIOA,GPIO_Pin_11);
+	GPIO_ResetBits(GPIOA,GPIO_Pin_5);
+	GPIO_ResetBits(GPIOA,GPIO_Pin_6);
+	GPIO_ResetBits(GPIOA,GPIO_Pin_7);
+	GPIO_ResetBits(GPIOA,GPIO_Pin_0);
+	GPIO_ResetBits(GPIOB,GPIO_Pin_13);
+}

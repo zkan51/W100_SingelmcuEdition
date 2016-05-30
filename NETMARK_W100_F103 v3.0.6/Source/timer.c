@@ -3,66 +3,6 @@
 int tim2_cnt; //定时器2计数
 ais_status led_state=off;
 /***********************************************************
- * 函数名: TIM3_NVIC_Configuration
- * 描述  ：配置定时器T3中断
- * 输入  : 无
- * 输出  : 无
- ***********************************************************/
-void TIM3_NVIC_Configuration(void)
-{
-		NVIC_InitTypeDef NVIC_InitStructure; 
-		NVIC_InitStructure.NVIC_IRQChannel = TIM3_IRQn;
-		NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 3;
-		NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
-		NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
-		NVIC_Init(&NVIC_InitStructure);
-}
-/***********************************************************
- * 函数名: TIM3_Configuration
- * 描述  ：配置定时器T3
- * 输入  : 无
- * 输出  : 无
- ***********************************************************/
-void TIM3_Configuration(void)
-{
-		TIM_TimeBaseInitTypeDef  TIM_TimeBaseStructure;
-		RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM3 , ENABLE);
-		TIM3_NVIC_Configuration();
-
-		TIM_DeInit(TIM3);
-		TIM_TimeBaseStructure.TIM_Period=99;		 								
-		TIM_TimeBaseStructure.TIM_Prescaler= 9;			//48M/(9+1)*(99+1)=9.6K*5的频率进入中断  
-		TIM_TimeBaseStructure.TIM_ClockDivision=TIM_CKD_DIV1; 		
-		TIM_TimeBaseStructure.TIM_CounterMode=TIM_CounterMode_Up; 
-		TIM_TimeBaseStructure.TIM_RepetitionCounter = 0;
-		TIM_TimeBaseInit(TIM3, &TIM_TimeBaseStructure);
-
-//	 TIM_ITConfig(TIM3, TIM_IT_Update , ENABLE);	
-//	 TIM_Cmd(TIM3, ENABLE);	/* 开启时钟 */ 
-}
-/***********************************************************
- * 函数名: TIM3_ON
- * 描述    打开定时器T3
- * 输入  : 无
- * 输出  : 无
- ***********************************************************/
-void TIM3_ON(void)
-{
-	 TIM_ITConfig(TIM3, TIM_IT_Update , ENABLE);	
-	 TIM_Cmd(TIM3, ENABLE);	
-}
-/***********************************************************
- * 函数名: TIM3_OFF
- * 描述  ：关闭定时器T3
- * 输入  : 无
- * 输出  : 无
- ***********************************************************/
-void TIM3_OFF(void)
-{
-	 TIM_ITConfig(TIM3, TIM_IT_Update , DISABLE);	
-	 TIM_Cmd(TIM3, DISABLE);	
-}
-/***********************************************************
  * 函数名: TIM4_Configuration
  * 描述  ：配置定时器T4,外部时钟触发模式，dds方波作为触发
  * 输入  : 无
@@ -167,21 +107,7 @@ void TIM2_ON(void)
 }
 
 //=============================================
-/***********************************************************
- * 函数名: TIM3_IRQHandler
- * 描述  ：定时器3中断服务函数，按   频率进入中断，根据查找
-           表写dds频率字
- * 输入  : 无
- * 输出  : 无
- ***********************************************************/
-void TIM3_IRQHandler(void)
-{	
-	if (TIM_GetITStatus(TIM3, TIM_IT_Update) != RESET)
-	{
-		
-		 TIM_ClearITPendingBit(TIM3, TIM_IT_Update);
-	}	
-}
+
 
 //
 //GPS失效时间判断

@@ -1,7 +1,4 @@
 #include "delay.h"
-
-
-
 /*******************************************************************************
  配置延时（采用计数）
 *******************************************************************************/
@@ -10,23 +7,6 @@ void  delay (u32 nCount)
 {
   for(; nCount != 0; nCount--);
 }
-
-#if 0
-void  delay_us (u32 nus)
-{
-  uint32_t i;
-  i = nus * 10;
-  for(; i != 0; i--);
-}
-
-					 
-void  delay_ms (u16 nms)
-{
-  uint32_t i;
-  i = nms * 8000;
-  for(; i != 0; i--);
-}
-#endif
 
 /*******************************************************************************
   采用SYSTICK 延时所需的 延时函数初始化
@@ -43,9 +23,7 @@ void delay_init(void)
 	fac_us=SystemCoreClock/8000000;	//为系统时钟的1/8
 	fac_ms=(u16)fac_us*1000;//非ucos下,代表每个ms需要的systick时钟数 
 }
-
-#if 1    
-		    								   
+		    						   
 void delay_us(u32 nus)
 {		
 	u32 temp;	    	 
@@ -81,5 +59,3 @@ void delay_ms(u16 nms)
 	SysTick->CTRL&=~SysTick_CTRL_ENABLE_Msk;       //关闭计数器
 	SysTick->VAL =0X00;       //清空计数器	  	    
 } 
-
-#endif

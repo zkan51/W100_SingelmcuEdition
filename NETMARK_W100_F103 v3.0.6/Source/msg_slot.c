@@ -147,7 +147,6 @@ void nrzi(void)
  *****************************************************************/
 void msg18_generating(void)
 {
-	u16 i;
 	msg18();
 	crc_reg=msg_crc(msg,len);
 	bit_to_byte_msg(msg);
@@ -258,23 +257,17 @@ void send_on(void)
 			{
 				txLen = 32;   //发送AIS消息数组的长度
 				msg_send18(); //生成消息18
-				PA_ON();      //打开功放
-				delay_ms(50); 
-				
+				delay_ms(20); 
 				SI446X_SEND_PACKET(txBuf, txLen, flag_channel, condition, size_of_FIFO, tx_threshold);		
 			}
 			else         	 //消息24A+24B
 			{
-				
 				flag_channel = (1-flag_channel);  //选择发送通道，0：161.975 ，1：162.025
 				Write_TX_Channel();
 				txLen = 64;
 				msg_send24();       //生成消息24A+24B
-				delay_ms(50); 
-				
+				delay_ms(20); 
 				SI446X_SEND_PACKET(txBuf, txLen, flag_channel, condition, size_of_FIFO, tx_threshold);
-			
-				PA_OFF();
 			}
 		}
 		

@@ -68,19 +68,9 @@ void Delay(__IO u32 nCount)
   for(; nCount != 0; nCount--);
 }
 
-//static u16 txLen = 0;
-//static u8 condition  = 0x30; // 发射完成后，返回ready状态
-//static u8 size_of_FIFO = 64; // 芯片中发射FIFO的容量为64 bytes
-//static u8 tx_threshold = 40; // FIFO中空出的空间达到40 bytes时，产生TFAE中断
-
 //经销商信息
 unsigned long Time;
 u8 AgencyName[16]={0};
-
-// Cortex System Control register address
-#define SCB_SysCtrl              ((uint32_t)0xE000ED10)
-// SLEEPDEEP bit mask
-#define SysCtrl_SLEEPDEEP_Set    ((uint32_t)0x00000004)
 u8 openflag; //开机
 
 int main(void)
@@ -110,6 +100,7 @@ int main(void)
 	
 	while(1)
  {	
+		ProgramSelector(); //拨码开关
 		if(!isCharging)     //只有在非充电状态下才发送AIS消息
 		{
 			send_on();
