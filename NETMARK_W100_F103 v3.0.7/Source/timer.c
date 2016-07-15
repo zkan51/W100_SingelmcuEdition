@@ -2,6 +2,7 @@
 
 int tim2_cnt; //定时器2计数
 ais_status led_state=off;
+static u8 ledShiningCnt=0;
 /***********************************************************
  * 函数名: TIM4_Configuration
  * 描述  ：配置定时器T4,外部时钟触发模式，dds方波作为触发
@@ -136,32 +137,59 @@ void TIM2_IRQHandler(void)
 //
 void TIM4_IRQHandler(void)
 {
+	u8 ledShining;
 	if (TIM_GetITStatus(TIM4, TIM_IT_Update) != RESET)
 	{
-		if(led_state==0)
+		ledShining = Read_OpenOnce();
+		if(ledShining && ledShiningCnt<6) //开机时红绿灯一起闪三下
 		{
-			if(battery >= BATTERYLEVEL)
+			ledShiningCnt++;
+			if(led_state==0)
 			{
 				LED_ON();
+				LED_RED_ON();
+				led_state = !led_state;
 			}
 			else 
-			{
-				LED_RED_ON();
-			}
-			led_state = !led_state;
-		}
-		else
-		{
-			if(battery >= BATTERYLEVEL)
 			{
 				LED_OFF();
-			}
-			else 
-			{
 				LED_RED_OFF();
+				led_state = !led_state;
 			}
-			led_state = !led_state;
+			if(6==ledShiningCnt)
+			{
+				openflag = 1;
+				BKP_WriteBackupRegister(BKP_DR2,openflag);
+			}
 		}
+		else 
+		{
+			if(led_state==0)
+			{
+					if(battery >= BATTERYLEVEL)
+					{
+						LED_ON();
+					}
+					else 
+					{
+						LED_RED_ON();
+					}
+					led_state = !led_state;
+				}
+				else
+				{
+					if(battery >= BATTERYLEVEL)
+					{
+						LED_OFF();
+					}
+					else 
+					{
+						LED_RED_OFF();
+					}
+					led_state = !led_state;
+				}
+		}
+		
 		TIM_ClearITPendingBit(TIM4, TIM_IT_Update);
 	}
 }

@@ -128,12 +128,10 @@ void USART2_IRQHandler(void)
 		}
 		if (1==rev_start)  //标志位为1，开始接收
 		{
-			
  			rev_buf[num++] = ch;  //字符存到数组中
 
 			if ('\n'==ch)     //如果接收到换行
 			{
-				
 				rev_buf[num] = '\0';
 				rev_start = 0;
 				gps_flag  = 1;

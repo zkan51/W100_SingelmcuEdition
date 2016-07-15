@@ -474,22 +474,15 @@ void Read_Flash_Cogsel(void) //读流网张网选择
 	cogsel = *(unsigned char*)FlashAddress; 
 }
 
-void Read_OpenOnce(void) //开机第一次标记 读取
+u8 Read_OpenOnce(void) //开机第一次标记 红绿灯一起闪
 {	
 	openflag = BKP_ReadBackupRegister(BKP_DR2);
-	if(GetBatteryPower() >= BATTERYLEVEL) //当非低电量时，才闪绿灯
+	if(openflag != 1) //第一次开机，未赋值
 	{
-		if(openflag != 1) //第一次开机，未赋值
-		{
-			TIM4_Configuration();
-			TIM4_ON(); //绿灯开机慢闪
-		}
-		else //唤醒后
-		{
-			openflag = 1;
-			BKP_WriteBackupRegister(BKP_DR2,openflag);
-		}
+		return 1;
 	}
+	else 
+		return 0;
 }
 
 /***********************************************************
@@ -526,6 +519,7 @@ void ReadFlashInit(void)
 	interval_s = BKP_ReadBackupRegister(BKP_DR3);
 	Read_GPS_Info();
 	flag_channel = BKP_ReadBackupRegister(BKP_DR6);
+	//Read_OpenOnce();
 }
 
 void WriteBackup(void)  //3个变量 写flash，写backup

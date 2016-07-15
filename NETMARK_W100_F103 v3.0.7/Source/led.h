@@ -5,7 +5,7 @@
 #include <stdio.h>
 
 void LedFlash(void);
-
+void led_Staringup(void);
 
 #endif 
 

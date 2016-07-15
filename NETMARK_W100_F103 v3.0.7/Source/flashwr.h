@@ -42,7 +42,7 @@ void Read_TX_Channel(void);
 void ReadBackup(void);  //掉电后读入变量值
 void WriteBackup(void);
 
-void Read_OpenOnce(void);
+u8 Read_OpenOnce(void);
 
 void Write_Flash_Cogsel(void);
 void Read_Flash_Cogsel(void);

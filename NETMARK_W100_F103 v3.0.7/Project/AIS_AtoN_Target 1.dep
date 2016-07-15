@@ -1,0 +1,1071 @@
+Dependencies for Project 'AIS_AtoN', Target 'Target 1': (DO NOT MODIFY !)
+F (.\startup_stm32f10x_md.s)(0x573FC3E1)(--cpu Cortex-M3 -g --apcs=interwork -I M:\keil\ARM\RV31\INC-I M:\keil\ARM\CMSIS\Include-I M:\keil\ARM\Inc\ST\STM32F10x--list ..\output\startup_stm32f10x_md.lst --xref -o ..\output\startup_stm32f10x_md.o --depend ..\output\startup_stm32f10x_md.d)
+F (..\Source\main.c)(0x5762A681)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\CMSIS -I..\FWlib\inc -I..\Source-I M:\keil\ARM\RV31\INC-I M:\keil\ARM\CMSIS\Include-I M:\keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -o ..\output\main.o --omf_browse ..\output\main.crf --depend ..\output\main.d)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\main.h)(0x57493883)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\core_cm3.h)(0x57492B24)
+I (M:\keil\ARM\ARMCC\include\stdint.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\system_stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\stm32f10x_conf.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_bkp.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_dbgmcu.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_exti.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_flash.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_gpio.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_pwr.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rcc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_spi.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_tim.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_usart.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\misc.h)(0x574915D7)
+I (M:\keil\ARM\ARMCC\include\stdio.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\stdlib.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\string.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\math.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\config.h)(0x5749002B)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\usart1.h)(0x57450F36)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\usart2.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\msg_slot.h)(0x57484008)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\timer.h)(0x5745463F)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\gps.h)(0x57455F68)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\gps_algorithm.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\mkmsg.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\cmdfunc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\flashwr.h)(0x574D7B82)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\power.h)(0x57467CAF)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\adc.h)(0x574A6D5D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\led.h)(0x574D3CBD)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\test.h)(0x573DA9FC)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\si4463.h)(0x5749004E)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\si446x_defs.h)(0x573FF3F0)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\spi.h)(0x57450F2F)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\delay.h)(0x57492B44)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\radio_config_Si4463_GMSK_v0.0.6.1.h)(0x5742646B)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\radio_config_Si4060_162025M.h)(0x573FE0BF)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_adc.h)(0x57397E9D)
+F (..\Source\config.c)(0x576357EF)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\CMSIS -I..\FWlib\inc -I..\Source-I M:\keil\ARM\RV31\INC-I M:\keil\ARM\CMSIS\Include-I M:\keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -o ..\output\config.o --omf_browse ..\output\config.crf --depend ..\output\config.d)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\main.h)(0x57493883)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\core_cm3.h)(0x57492B24)
+I (M:\keil\ARM\ARMCC\include\stdint.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\system_stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\stm32f10x_conf.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_bkp.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_dbgmcu.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_exti.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_flash.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_gpio.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_pwr.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rcc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_spi.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_tim.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_usart.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\misc.h)(0x574915D7)
+I (M:\keil\ARM\ARMCC\include\stdio.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\stdlib.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\string.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\math.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\config.h)(0x5749002B)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\usart1.h)(0x57450F36)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\usart2.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\msg_slot.h)(0x57484008)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\timer.h)(0x5745463F)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\gps.h)(0x57455F68)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\gps_algorithm.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\mkmsg.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\cmdfunc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\flashwr.h)(0x574D7B82)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\power.h)(0x57467CAF)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\adc.h)(0x574A6D5D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\led.h)(0x574D3CBD)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\test.h)(0x573DA9FC)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\si4463.h)(0x5749004E)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\si446x_defs.h)(0x573FF3F0)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\spi.h)(0x57450F2F)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\delay.h)(0x57492B44)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\radio_config_Si4463_GMSK_v0.0.6.1.h)(0x5742646B)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\radio_config_Si4060_162025M.h)(0x573FE0BF)
+F (..\Source\msg_slot.c)(0x574A6D97)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\CMSIS -I..\FWlib\inc -I..\Source-I M:\keil\ARM\RV31\INC-I M:\keil\ARM\CMSIS\Include-I M:\keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -o ..\output\msg_slot.o --omf_browse ..\output\msg_slot.crf --depend ..\output\msg_slot.d)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\main.h)(0x57493883)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\core_cm3.h)(0x57492B24)
+I (M:\keil\ARM\ARMCC\include\stdint.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\system_stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\stm32f10x_conf.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_bkp.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_dbgmcu.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_exti.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_flash.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_gpio.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_pwr.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rcc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_spi.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_tim.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_usart.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\misc.h)(0x574915D7)
+I (M:\keil\ARM\ARMCC\include\stdio.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\stdlib.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\string.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\math.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\config.h)(0x5749002B)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\usart1.h)(0x57450F36)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\usart2.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\msg_slot.h)(0x57484008)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\timer.h)(0x5745463F)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\gps.h)(0x57455F68)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\gps_algorithm.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\mkmsg.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\cmdfunc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\flashwr.h)(0x574D7B82)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\power.h)(0x57467CAF)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\adc.h)(0x574A6D5D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\led.h)(0x574D3CBD)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\test.h)(0x573DA9FC)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\si4463.h)(0x5749004E)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\si446x_defs.h)(0x573FF3F0)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\spi.h)(0x57450F2F)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\delay.h)(0x57492B44)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\radio_config_Si4463_GMSK_v0.0.6.1.h)(0x5742646B)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\radio_config_Si4060_162025M.h)(0x573FE0BF)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_adc.h)(0x57397E9D)
+F (..\Source\timer.c)(0x574D833C)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\CMSIS -I..\FWlib\inc -I..\Source-I M:\keil\ARM\RV31\INC-I M:\keil\ARM\CMSIS\Include-I M:\keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -o ..\output\timer.o --omf_browse ..\output\timer.crf --depend ..\output\timer.d)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\main.h)(0x57493883)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\core_cm3.h)(0x57492B24)
+I (M:\keil\ARM\ARMCC\include\stdint.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\system_stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\stm32f10x_conf.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_bkp.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_dbgmcu.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_exti.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_flash.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_gpio.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_pwr.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rcc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_spi.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_tim.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_usart.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\misc.h)(0x574915D7)
+I (M:\keil\ARM\ARMCC\include\stdio.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\stdlib.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\string.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\math.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\config.h)(0x5749002B)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\usart1.h)(0x57450F36)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\usart2.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\msg_slot.h)(0x57484008)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\timer.h)(0x5745463F)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\gps.h)(0x57455F68)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\gps_algorithm.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\mkmsg.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\cmdfunc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\flashwr.h)(0x574D7B82)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\power.h)(0x57467CAF)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\adc.h)(0x574A6D5D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\led.h)(0x574D3CBD)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\test.h)(0x573DA9FC)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\si4463.h)(0x5749004E)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\si446x_defs.h)(0x573FF3F0)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\spi.h)(0x57450F2F)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\delay.h)(0x57492B44)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\radio_config_Si4463_GMSK_v0.0.6.1.h)(0x5742646B)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\radio_config_Si4060_162025M.h)(0x573FE0BF)
+F (..\Source\stm32f10x_it.c)(0x57397E9D)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\CMSIS -I..\FWlib\inc -I..\Source-I M:\keil\ARM\RV31\INC-I M:\keil\ARM\CMSIS\Include-I M:\keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -o ..\output\stm32f10x_it.o --omf_browse ..\output\stm32f10x_it.crf --depend ..\output\stm32f10x_it.d)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\stm32f10x_it.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\core_cm3.h)(0x57492B24)
+I (M:\keil\ARM\ARMCC\include\stdint.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\system_stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\stm32f10x_conf.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_bkp.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_dbgmcu.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_exti.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_flash.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_gpio.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_pwr.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rcc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_spi.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_tim.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_usart.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\misc.h)(0x574915D7)
+F (..\Source\gps.c)(0x574E3901)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\CMSIS -I..\FWlib\inc -I..\Source-I M:\keil\ARM\RV31\INC-I M:\keil\ARM\CMSIS\Include-I M:\keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -o ..\output\gps.o --omf_browse ..\output\gps.crf --depend ..\output\gps.d)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\main.h)(0x57493883)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\core_cm3.h)(0x57492B24)
+I (M:\keil\ARM\ARMCC\include\stdint.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\system_stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\stm32f10x_conf.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_bkp.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_dbgmcu.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_exti.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_flash.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_gpio.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_pwr.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rcc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_spi.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_tim.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_usart.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\misc.h)(0x574915D7)
+I (M:\keil\ARM\ARMCC\include\stdio.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\stdlib.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\string.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\math.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\config.h)(0x5749002B)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\usart1.h)(0x57450F36)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\usart2.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\msg_slot.h)(0x57484008)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\timer.h)(0x5745463F)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\gps.h)(0x57455F68)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\gps_algorithm.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\mkmsg.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\cmdfunc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\flashwr.h)(0x574D7B82)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\power.h)(0x57467CAF)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\adc.h)(0x574A6D5D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\led.h)(0x574D3CBD)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\test.h)(0x573DA9FC)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\si4463.h)(0x5749004E)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\si446x_defs.h)(0x573FF3F0)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\spi.h)(0x57450F2F)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\delay.h)(0x57492B44)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\radio_config_Si4463_GMSK_v0.0.6.1.h)(0x5742646B)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\radio_config_Si4060_162025M.h)(0x573FE0BF)
+F (..\Source\gps_algorithm.c)(0x57397E9D)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\CMSIS -I..\FWlib\inc -I..\Source-I M:\keil\ARM\RV31\INC-I M:\keil\ARM\CMSIS\Include-I M:\keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -o ..\output\gps_algorithm.o --omf_browse ..\output\gps_algorithm.crf --depend ..\output\gps_algorithm.d)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\main.h)(0x57493883)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\core_cm3.h)(0x57492B24)
+I (M:\keil\ARM\ARMCC\include\stdint.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\system_stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\stm32f10x_conf.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_bkp.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_dbgmcu.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_exti.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_flash.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_gpio.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_pwr.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rcc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_spi.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_tim.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_usart.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\misc.h)(0x574915D7)
+I (M:\keil\ARM\ARMCC\include\stdio.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\stdlib.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\string.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\math.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\config.h)(0x5749002B)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\usart1.h)(0x57450F36)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\usart2.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\msg_slot.h)(0x57484008)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\timer.h)(0x5745463F)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\gps.h)(0x57455F68)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\gps_algorithm.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\mkmsg.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\cmdfunc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\flashwr.h)(0x574D7B82)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\power.h)(0x57467CAF)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\adc.h)(0x574A6D5D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\led.h)(0x574D3CBD)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\test.h)(0x573DA9FC)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\si4463.h)(0x5749004E)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\si446x_defs.h)(0x573FF3F0)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\spi.h)(0x57450F2F)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\delay.h)(0x57492B44)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\radio_config_Si4463_GMSK_v0.0.6.1.h)(0x5742646B)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\radio_config_Si4060_162025M.h)(0x573FE0BF)
+F (..\Source\mkmsg.c)(0x57491530)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\CMSIS -I..\FWlib\inc -I..\Source-I M:\keil\ARM\RV31\INC-I M:\keil\ARM\CMSIS\Include-I M:\keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -o ..\output\mkmsg.o --omf_browse ..\output\mkmsg.crf --depend ..\output\mkmsg.d)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\main.h)(0x57493883)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\core_cm3.h)(0x57492B24)
+I (M:\keil\ARM\ARMCC\include\stdint.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\system_stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\stm32f10x_conf.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_bkp.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_dbgmcu.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_exti.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_flash.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_gpio.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_pwr.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rcc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_spi.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_tim.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_usart.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\misc.h)(0x574915D7)
+I (M:\keil\ARM\ARMCC\include\stdio.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\stdlib.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\string.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\math.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\config.h)(0x5749002B)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\usart1.h)(0x57450F36)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\usart2.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\msg_slot.h)(0x57484008)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\timer.h)(0x5745463F)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\gps.h)(0x57455F68)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\gps_algorithm.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\mkmsg.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\cmdfunc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\flashwr.h)(0x574D7B82)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\power.h)(0x57467CAF)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\adc.h)(0x574A6D5D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\led.h)(0x574D3CBD)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\test.h)(0x573DA9FC)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\si4463.h)(0x5749004E)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\si446x_defs.h)(0x573FF3F0)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\spi.h)(0x57450F2F)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\delay.h)(0x57492B44)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\radio_config_Si4463_GMSK_v0.0.6.1.h)(0x5742646B)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\radio_config_Si4060_162025M.h)(0x573FE0BF)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_adc.h)(0x57397E9D)
+F (..\Source\usart1.c)(0x5762A67F)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\CMSIS -I..\FWlib\inc -I..\Source-I M:\keil\ARM\RV31\INC-I M:\keil\ARM\CMSIS\Include-I M:\keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -o ..\output\usart1.o --omf_browse ..\output\usart1.crf --depend ..\output\usart1.d)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\main.h)(0x57493883)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\core_cm3.h)(0x57492B24)
+I (M:\keil\ARM\ARMCC\include\stdint.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\system_stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\stm32f10x_conf.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_bkp.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_dbgmcu.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_exti.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_flash.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_gpio.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_pwr.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rcc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_spi.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_tim.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_usart.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\misc.h)(0x574915D7)
+I (M:\keil\ARM\ARMCC\include\stdio.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\stdlib.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\string.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\math.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\config.h)(0x5749002B)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\usart1.h)(0x57450F36)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\usart2.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\msg_slot.h)(0x57484008)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\timer.h)(0x5745463F)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\gps.h)(0x57455F68)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\gps_algorithm.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\mkmsg.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\cmdfunc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\flashwr.h)(0x574D7B82)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\power.h)(0x57467CAF)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\adc.h)(0x574A6D5D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\led.h)(0x574D3CBD)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\test.h)(0x573DA9FC)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\si4463.h)(0x5749004E)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\si446x_defs.h)(0x573FF3F0)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\spi.h)(0x57450F2F)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\delay.h)(0x57492B44)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\radio_config_Si4463_GMSK_v0.0.6.1.h)(0x5742646B)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\radio_config_Si4060_162025M.h)(0x573FE0BF)
+I (M:\keil\ARM\ARMCC\include\stdarg.h)(0x516E81E4)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_dma.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\usart3.h)(0x57397E9D)
+F (..\Source\usart2.c)(0x5762AC65)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\CMSIS -I..\FWlib\inc -I..\Source-I M:\keil\ARM\RV31\INC-I M:\keil\ARM\CMSIS\Include-I M:\keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -o ..\output\usart2.o --omf_browse ..\output\usart2.crf --depend ..\output\usart2.d)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\main.h)(0x57493883)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\core_cm3.h)(0x57492B24)
+I (M:\keil\ARM\ARMCC\include\stdint.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\system_stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\stm32f10x_conf.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_bkp.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_dbgmcu.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_exti.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_flash.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_gpio.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_pwr.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rcc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_spi.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_tim.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_usart.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\misc.h)(0x574915D7)
+I (M:\keil\ARM\ARMCC\include\stdio.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\stdlib.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\string.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\math.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\config.h)(0x5749002B)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\usart1.h)(0x57450F36)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\usart2.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\msg_slot.h)(0x57484008)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\timer.h)(0x5745463F)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\gps.h)(0x57455F68)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\gps_algorithm.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\mkmsg.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\cmdfunc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\flashwr.h)(0x574D7B82)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\power.h)(0x57467CAF)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\adc.h)(0x574A6D5D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\led.h)(0x574D3CBD)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\test.h)(0x573DA9FC)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\si4463.h)(0x5749004E)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\si446x_defs.h)(0x573FF3F0)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\spi.h)(0x57450F2F)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\delay.h)(0x57492B44)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\radio_config_Si4463_GMSK_v0.0.6.1.h)(0x5742646B)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\radio_config_Si4060_162025M.h)(0x573FE0BF)
+I (M:\keil\ARM\ARMCC\include\stdarg.h)(0x516E81E4)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_dma.h)(0x57397E9D)
+F (..\Source\flashwr.c)(0x57627099)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\CMSIS -I..\FWlib\inc -I..\Source-I M:\keil\ARM\RV31\INC-I M:\keil\ARM\CMSIS\Include-I M:\keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -o ..\output\flashwr.o --omf_browse ..\output\flashwr.crf --depend ..\output\flashwr.d)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\main.h)(0x57493883)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\core_cm3.h)(0x57492B24)
+I (M:\keil\ARM\ARMCC\include\stdint.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\system_stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\stm32f10x_conf.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_bkp.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_dbgmcu.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_exti.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_flash.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_gpio.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_pwr.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rcc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_spi.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_tim.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_usart.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\misc.h)(0x574915D7)
+I (M:\keil\ARM\ARMCC\include\stdio.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\stdlib.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\string.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\math.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\config.h)(0x5749002B)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\usart1.h)(0x57450F36)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\usart2.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\msg_slot.h)(0x57484008)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\timer.h)(0x5745463F)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\gps.h)(0x57455F68)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\gps_algorithm.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\mkmsg.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\cmdfunc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\flashwr.h)(0x574D7B82)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\power.h)(0x57467CAF)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\adc.h)(0x574A6D5D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\led.h)(0x574D3CBD)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\test.h)(0x573DA9FC)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\si4463.h)(0x5749004E)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\si446x_defs.h)(0x573FF3F0)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\spi.h)(0x57450F2F)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\delay.h)(0x57492B44)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\radio_config_Si4463_GMSK_v0.0.6.1.h)(0x5742646B)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\radio_config_Si4060_162025M.h)(0x573FE0BF)
+F (..\Source\adc.c)(0x574BAB28)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\CMSIS -I..\FWlib\inc -I..\Source-I M:\keil\ARM\RV31\INC-I M:\keil\ARM\CMSIS\Include-I M:\keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -o ..\output\adc.o --omf_browse ..\output\adc.crf --depend ..\output\adc.d)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\adc.h)(0x574A6D5D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\core_cm3.h)(0x57492B24)
+I (M:\keil\ARM\ARMCC\include\stdint.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\system_stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\stm32f10x_conf.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_bkp.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_dbgmcu.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_exti.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_flash.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_gpio.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_pwr.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rcc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_spi.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_tim.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_usart.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\misc.h)(0x574915D7)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\delay.h)(0x57492B44)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_adc.h)(0x57397E9D)
+F (..\Source\led.c)(0x5788868C)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\CMSIS -I..\FWlib\inc -I..\Source-I M:\keil\ARM\RV31\INC-I M:\keil\ARM\CMSIS\Include-I M:\keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -o ..\output\led.o --omf_browse ..\output\led.crf --depend ..\output\led.d)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\main.h)(0x57493883)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\core_cm3.h)(0x57492B24)
+I (M:\keil\ARM\ARMCC\include\stdint.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\system_stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\stm32f10x_conf.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_bkp.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_dbgmcu.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_exti.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_flash.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_gpio.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_pwr.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rcc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_spi.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_tim.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_usart.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\misc.h)(0x574915D7)
+I (M:\keil\ARM\ARMCC\include\stdio.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\stdlib.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\string.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\math.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\config.h)(0x5749002B)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\usart1.h)(0x57450F36)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\usart2.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\msg_slot.h)(0x57484008)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\timer.h)(0x5745463F)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\gps.h)(0x57455F68)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\gps_algorithm.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\mkmsg.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\cmdfunc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\flashwr.h)(0x574D7B82)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\power.h)(0x57467CAF)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\adc.h)(0x574A6D5D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\led.h)(0x574D3CBD)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\test.h)(0x573DA9FC)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\si4463.h)(0x5749004E)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\si446x_defs.h)(0x573FF3F0)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\spi.h)(0x57450F2F)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\delay.h)(0x57492B44)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\radio_config_Si4463_GMSK_v0.0.6.1.h)(0x5742646B)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\radio_config_Si4060_162025M.h)(0x573FE0BF)
+F (..\Source\power.c)(0x574A756A)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\CMSIS -I..\FWlib\inc -I..\Source-I M:\keil\ARM\RV31\INC-I M:\keil\ARM\CMSIS\Include-I M:\keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -o ..\output\power.o --omf_browse ..\output\power.crf --depend ..\output\power.d)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\main.h)(0x57493883)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\core_cm3.h)(0x57492B24)
+I (M:\keil\ARM\ARMCC\include\stdint.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\system_stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\stm32f10x_conf.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_bkp.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_dbgmcu.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_exti.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_flash.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_gpio.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_pwr.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rcc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_spi.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_tim.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_usart.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\misc.h)(0x574915D7)
+I (M:\keil\ARM\ARMCC\include\stdio.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\stdlib.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\string.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\math.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\config.h)(0x5749002B)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\usart1.h)(0x57450F36)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\usart2.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\msg_slot.h)(0x57484008)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\timer.h)(0x5745463F)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\gps.h)(0x57455F68)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\gps_algorithm.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\mkmsg.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\cmdfunc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\flashwr.h)(0x574D7B82)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\power.h)(0x57467CAF)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\adc.h)(0x574A6D5D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\led.h)(0x574D3CBD)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\test.h)(0x573DA9FC)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\si4463.h)(0x5749004E)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\si446x_defs.h)(0x573FF3F0)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\spi.h)(0x57450F2F)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\delay.h)(0x57492B44)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\radio_config_Si4463_GMSK_v0.0.6.1.h)(0x5742646B)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\radio_config_Si4060_162025M.h)(0x573FE0BF)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_adc.h)(0x57397E9D)
+F (..\Source\cmdfunc.c)(0x574938C4)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\CMSIS -I..\FWlib\inc -I..\Source-I M:\keil\ARM\RV31\INC-I M:\keil\ARM\CMSIS\Include-I M:\keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -o ..\output\cmdfunc.o --omf_browse ..\output\cmdfunc.crf --depend ..\output\cmdfunc.d)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\main.h)(0x57493883)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\core_cm3.h)(0x57492B24)
+I (M:\keil\ARM\ARMCC\include\stdint.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\system_stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\stm32f10x_conf.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_bkp.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_dbgmcu.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_exti.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_flash.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_gpio.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_pwr.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rcc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_spi.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_tim.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_usart.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\misc.h)(0x574915D7)
+I (M:\keil\ARM\ARMCC\include\stdio.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\stdlib.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\string.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\math.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\config.h)(0x5749002B)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\usart1.h)(0x57450F36)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\usart2.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\msg_slot.h)(0x57484008)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\timer.h)(0x5745463F)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\gps.h)(0x57455F68)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\gps_algorithm.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\mkmsg.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\cmdfunc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\flashwr.h)(0x574D7B82)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\power.h)(0x57467CAF)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\adc.h)(0x574A6D5D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\led.h)(0x574D3CBD)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\test.h)(0x573DA9FC)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\si4463.h)(0x5749004E)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\si446x_defs.h)(0x573FF3F0)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\spi.h)(0x57450F2F)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\delay.h)(0x57492B44)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\radio_config_Si4463_GMSK_v0.0.6.1.h)(0x5742646B)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\radio_config_Si4060_162025M.h)(0x573FE0BF)
+F (..\Source\stm32f10x_conf.h)(0x57397E9D)()
+F (..\Source\rtc.c)(0x574D45F8)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\CMSIS -I..\FWlib\inc -I..\Source-I M:\keil\ARM\RV31\INC-I M:\keil\ARM\CMSIS\Include-I M:\keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -o ..\output\rtc.o --omf_browse ..\output\rtc.crf --depend ..\output\rtc.d)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\main.h)(0x57493883)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\core_cm3.h)(0x57492B24)
+I (M:\keil\ARM\ARMCC\include\stdint.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\system_stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\stm32f10x_conf.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_bkp.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_dbgmcu.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_exti.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_flash.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_gpio.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_pwr.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rcc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_spi.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_tim.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_usart.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\misc.h)(0x574915D7)
+I (M:\keil\ARM\ARMCC\include\stdio.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\stdlib.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\string.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\math.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\config.h)(0x5749002B)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\usart1.h)(0x57450F36)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\usart2.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\msg_slot.h)(0x57484008)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\timer.h)(0x5745463F)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\gps.h)(0x57455F68)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\gps_algorithm.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\mkmsg.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\cmdfunc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\flashwr.h)(0x574D7B82)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\power.h)(0x57467CAF)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\adc.h)(0x574A6D5D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\led.h)(0x574D3CBD)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\test.h)(0x573DA9FC)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\si4463.h)(0x5749004E)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\si446x_defs.h)(0x573FF3F0)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\spi.h)(0x57450F2F)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\delay.h)(0x57492B44)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\radio_config_Si4463_GMSK_v0.0.6.1.h)(0x5742646B)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\radio_config_Si4060_162025M.h)(0x573FE0BF)
+F (..\Source\test.c)(0x57490174)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\CMSIS -I..\FWlib\inc -I..\Source-I M:\keil\ARM\RV31\INC-I M:\keil\ARM\CMSIS\Include-I M:\keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -o ..\output\test.o --omf_browse ..\output\test.crf --depend ..\output\test.d)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\main.h)(0x57493883)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\core_cm3.h)(0x57492B24)
+I (M:\keil\ARM\ARMCC\include\stdint.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\system_stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\stm32f10x_conf.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_bkp.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_dbgmcu.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_exti.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_flash.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_gpio.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_pwr.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rcc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_spi.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_tim.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_usart.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\misc.h)(0x574915D7)
+I (M:\keil\ARM\ARMCC\include\stdio.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\stdlib.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\string.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\math.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\config.h)(0x5749002B)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\usart1.h)(0x57450F36)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\usart2.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\msg_slot.h)(0x57484008)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\timer.h)(0x5745463F)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\gps.h)(0x57455F68)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\gps_algorithm.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\mkmsg.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\cmdfunc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\flashwr.h)(0x574D7B82)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\power.h)(0x57467CAF)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\adc.h)(0x574A6D5D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\led.h)(0x574D3CBD)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\test.h)(0x573DA9FC)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\si4463.h)(0x5749004E)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\si446x_defs.h)(0x573FF3F0)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\spi.h)(0x57450F2F)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\delay.h)(0x57492B44)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\radio_config_Si4463_GMSK_v0.0.6.1.h)(0x5742646B)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\radio_config_Si4060_162025M.h)(0x573FE0BF)
+F (..\Source\si4463.c)(0x57492C75)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\CMSIS -I..\FWlib\inc -I..\Source-I M:\keil\ARM\RV31\INC-I M:\keil\ARM\CMSIS\Include-I M:\keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -o ..\output\si4463.o --omf_browse ..\output\si4463.crf --depend ..\output\si4463.d)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\main.h)(0x57493883)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\core_cm3.h)(0x57492B24)
+I (M:\keil\ARM\ARMCC\include\stdint.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\system_stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\stm32f10x_conf.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_bkp.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_dbgmcu.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_exti.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_flash.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_gpio.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_pwr.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rcc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_spi.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_tim.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_usart.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\misc.h)(0x574915D7)
+I (M:\keil\ARM\ARMCC\include\stdio.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\stdlib.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\string.h)(0x516E81E6)
+I (M:\keil\ARM\ARMCC\include\math.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\config.h)(0x5749002B)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\usart1.h)(0x57450F36)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\usart2.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\msg_slot.h)(0x57484008)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\timer.h)(0x5745463F)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\gps.h)(0x57455F68)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\gps_algorithm.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\mkmsg.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\cmdfunc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\flashwr.h)(0x574D7B82)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\power.h)(0x57467CAF)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\adc.h)(0x574A6D5D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\led.h)(0x574D3CBD)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\test.h)(0x573DA9FC)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\si4463.h)(0x5749004E)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\si446x_defs.h)(0x573FF3F0)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\spi.h)(0x57450F2F)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\delay.h)(0x57492B44)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\radio_config_Si4463_GMSK_v0.0.6.1.h)(0x5742646B)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\radio_config_Si4060_162025M.h)(0x573FE0BF)
+F (..\Source\spi.c)(0x57450F2A)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\CMSIS -I..\FWlib\inc -I..\Source-I M:\keil\ARM\RV31\INC-I M:\keil\ARM\CMSIS\Include-I M:\keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -o ..\output\spi.o --omf_browse ..\output\spi.crf --depend ..\output\spi.d)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\spi.h)(0x57450F2F)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\core_cm3.h)(0x57492B24)
+I (M:\keil\ARM\ARMCC\include\stdint.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\system_stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\stm32f10x_conf.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_bkp.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_dbgmcu.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_exti.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_flash.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_gpio.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_pwr.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rcc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_spi.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_tim.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_usart.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\misc.h)(0x574915D7)
+I (M:\keil\ARM\ARMCC\include\stdio.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\delay.h)(0x57492B44)
+F (..\Source\delay.c)(0x574937ED)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\CMSIS -I..\FWlib\inc -I..\Source-I M:\keil\ARM\RV31\INC-I M:\keil\ARM\CMSIS\Include-I M:\keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -o ..\output\delay.o --omf_browse ..\output\delay.crf --depend ..\output\delay.d)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\delay.h)(0x57492B44)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\core_cm3.h)(0x57492B24)
+I (M:\keil\ARM\ARMCC\include\stdint.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\system_stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\stm32f10x_conf.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_bkp.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_dbgmcu.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_exti.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_flash.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_gpio.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_pwr.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rcc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_spi.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_tim.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_usart.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\misc.h)(0x574915D7)
+F (..\FWlib\src\misc.c)(0x57397E9D)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\CMSIS -I..\FWlib\inc -I..\Source-I M:\keil\ARM\RV31\INC-I M:\keil\ARM\CMSIS\Include-I M:\keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -o ..\output\misc.o --omf_browse ..\output\misc.crf --depend ..\output\misc.d)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\misc.h)(0x574915D7)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\core_cm3.h)(0x57492B24)
+I (M:\keil\ARM\ARMCC\include\stdint.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\system_stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\stm32f10x_conf.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_bkp.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_dbgmcu.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_exti.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_flash.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_gpio.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_pwr.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rcc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_spi.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_tim.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_usart.h)(0x57397E9D)
+F (..\FWlib\src\stm32f10x_exti.c)(0x57397E9D)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\CMSIS -I..\FWlib\inc -I..\Source-I M:\keil\ARM\RV31\INC-I M:\keil\ARM\CMSIS\Include-I M:\keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -o ..\output\stm32f10x_exti.o --omf_browse ..\output\stm32f10x_exti.crf --depend ..\output\stm32f10x_exti.d)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_exti.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\core_cm3.h)(0x57492B24)
+I (M:\keil\ARM\ARMCC\include\stdint.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\system_stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\stm32f10x_conf.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_bkp.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_dbgmcu.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_flash.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_gpio.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_pwr.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rcc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_spi.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_tim.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_usart.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\misc.h)(0x574915D7)
+F (..\FWlib\src\stm32f10x_flash.c)(0x57397E9D)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\CMSIS -I..\FWlib\inc -I..\Source-I M:\keil\ARM\RV31\INC-I M:\keil\ARM\CMSIS\Include-I M:\keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -o ..\output\stm32f10x_flash.o --omf_browse ..\output\stm32f10x_flash.crf --depend ..\output\stm32f10x_flash.d)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_flash.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\core_cm3.h)(0x57492B24)
+I (M:\keil\ARM\ARMCC\include\stdint.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\system_stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\stm32f10x_conf.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_bkp.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_dbgmcu.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_exti.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_gpio.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_pwr.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rcc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_spi.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_tim.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_usart.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\misc.h)(0x574915D7)
+F (..\FWlib\src\stm32f10x_gpio.c)(0x57412695)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\CMSIS -I..\FWlib\inc -I..\Source-I M:\keil\ARM\RV31\INC-I M:\keil\ARM\CMSIS\Include-I M:\keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -o ..\output\stm32f10x_gpio.o --omf_browse ..\output\stm32f10x_gpio.crf --depend ..\output\stm32f10x_gpio.d)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_gpio.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\core_cm3.h)(0x57492B24)
+I (M:\keil\ARM\ARMCC\include\stdint.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\system_stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\stm32f10x_conf.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_bkp.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_dbgmcu.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_exti.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_flash.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_pwr.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rcc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_spi.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_tim.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_usart.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\misc.h)(0x574915D7)
+F (..\FWlib\src\stm32f10x_pwr.c)(0x57397E9D)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\CMSIS -I..\FWlib\inc -I..\Source-I M:\keil\ARM\RV31\INC-I M:\keil\ARM\CMSIS\Include-I M:\keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -o ..\output\stm32f10x_pwr.o --omf_browse ..\output\stm32f10x_pwr.crf --depend ..\output\stm32f10x_pwr.d)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_pwr.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\core_cm3.h)(0x57492B24)
+I (M:\keil\ARM\ARMCC\include\stdint.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\system_stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\stm32f10x_conf.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_bkp.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_dbgmcu.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_exti.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_flash.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_gpio.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rcc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_spi.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_tim.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_usart.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\misc.h)(0x574915D7)
+F (..\FWlib\src\stm32f10x_rcc.c)(0x57397E9D)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\CMSIS -I..\FWlib\inc -I..\Source-I M:\keil\ARM\RV31\INC-I M:\keil\ARM\CMSIS\Include-I M:\keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -o ..\output\stm32f10x_rcc.o --omf_browse ..\output\stm32f10x_rcc.crf --depend ..\output\stm32f10x_rcc.d)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rcc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\core_cm3.h)(0x57492B24)
+I (M:\keil\ARM\ARMCC\include\stdint.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\system_stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\stm32f10x_conf.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_bkp.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_dbgmcu.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_exti.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_flash.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_gpio.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_pwr.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_spi.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_tim.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_usart.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\misc.h)(0x574915D7)
+F (..\FWlib\src\stm32f10x_rtc.c)(0x57397E9D)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\CMSIS -I..\FWlib\inc -I..\Source-I M:\keil\ARM\RV31\INC-I M:\keil\ARM\CMSIS\Include-I M:\keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -o ..\output\stm32f10x_rtc.o --omf_browse ..\output\stm32f10x_rtc.crf --depend ..\output\stm32f10x_rtc.d)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\core_cm3.h)(0x57492B24)
+I (M:\keil\ARM\ARMCC\include\stdint.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\system_stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\stm32f10x_conf.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_bkp.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_dbgmcu.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_exti.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_flash.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_gpio.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_pwr.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rcc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_spi.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_tim.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_usart.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\misc.h)(0x574915D7)
+F (..\FWlib\src\stm32f10x_spi.c)(0x57397E9D)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\CMSIS -I..\FWlib\inc -I..\Source-I M:\keil\ARM\RV31\INC-I M:\keil\ARM\CMSIS\Include-I M:\keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -o ..\output\stm32f10x_spi.o --omf_browse ..\output\stm32f10x_spi.crf --depend ..\output\stm32f10x_spi.d)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_spi.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\core_cm3.h)(0x57492B24)
+I (M:\keil\ARM\ARMCC\include\stdint.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\system_stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\stm32f10x_conf.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_bkp.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_dbgmcu.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_exti.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_flash.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_gpio.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_pwr.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rcc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_tim.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_usart.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\misc.h)(0x574915D7)
+F (..\FWlib\src\stm32f10x_tim.c)(0x57397E9D)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\CMSIS -I..\FWlib\inc -I..\Source-I M:\keil\ARM\RV31\INC-I M:\keil\ARM\CMSIS\Include-I M:\keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -o ..\output\stm32f10x_tim.o --omf_browse ..\output\stm32f10x_tim.crf --depend ..\output\stm32f10x_tim.d)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_tim.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\core_cm3.h)(0x57492B24)
+I (M:\keil\ARM\ARMCC\include\stdint.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\system_stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\stm32f10x_conf.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_bkp.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_dbgmcu.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_exti.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_flash.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_gpio.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_pwr.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rcc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_spi.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_usart.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\misc.h)(0x574915D7)
+F (..\FWlib\src\stm32f10x_usart.c)(0x57397E9D)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\CMSIS -I..\FWlib\inc -I..\Source-I M:\keil\ARM\RV31\INC-I M:\keil\ARM\CMSIS\Include-I M:\keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -o ..\output\stm32f10x_usart.o --omf_browse ..\output\stm32f10x_usart.crf --depend ..\output\stm32f10x_usart.d)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_usart.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\core_cm3.h)(0x57492B24)
+I (M:\keil\ARM\ARMCC\include\stdint.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\system_stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\stm32f10x_conf.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_bkp.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_dbgmcu.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_exti.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_flash.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_gpio.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_pwr.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rcc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_spi.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_tim.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\misc.h)(0x574915D7)
+F (..\FWlib\src\stm32f10x_bkp.c)(0x57397E9D)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\CMSIS -I..\FWlib\inc -I..\Source-I M:\keil\ARM\RV31\INC-I M:\keil\ARM\CMSIS\Include-I M:\keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -o ..\output\stm32f10x_bkp.o --omf_browse ..\output\stm32f10x_bkp.crf --depend ..\output\stm32f10x_bkp.d)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_bkp.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\core_cm3.h)(0x57492B24)
+I (M:\keil\ARM\ARMCC\include\stdint.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\system_stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\stm32f10x_conf.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_dbgmcu.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_exti.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_flash.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_gpio.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_pwr.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rcc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_spi.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_tim.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_usart.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\misc.h)(0x574915D7)
+F (..\FWlib\src\stm32f10x_dma.c)(0x57397E9D)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\CMSIS -I..\FWlib\inc -I..\Source-I M:\keil\ARM\RV31\INC-I M:\keil\ARM\CMSIS\Include-I M:\keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -o ..\output\stm32f10x_dma.o --omf_browse ..\output\stm32f10x_dma.crf --depend ..\output\stm32f10x_dma.d)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_dma.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\core_cm3.h)(0x57492B24)
+I (M:\keil\ARM\ARMCC\include\stdint.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\system_stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\stm32f10x_conf.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_bkp.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_dbgmcu.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_exti.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_flash.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_gpio.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_pwr.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rcc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_spi.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_tim.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_usart.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\misc.h)(0x574915D7)
+F (..\FWlib\src\stm32f10x_adc.c)(0x57397E9D)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\CMSIS -I..\FWlib\inc -I..\Source-I M:\keil\ARM\RV31\INC-I M:\keil\ARM\CMSIS\Include-I M:\keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -o ..\output\stm32f10x_adc.o --omf_browse ..\output\stm32f10x_adc.crf --depend ..\output\stm32f10x_adc.d)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_adc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\core_cm3.h)(0x57492B24)
+I (M:\keil\ARM\ARMCC\include\stdint.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\system_stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\stm32f10x_conf.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_bkp.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_dbgmcu.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_exti.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_flash.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_gpio.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_pwr.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rcc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_spi.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_tim.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_usart.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\misc.h)(0x574915D7)
+F (..\FWlib\src\stm32f10x_dbgmcu.c)(0x57397E9D)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\CMSIS -I..\FWlib\inc -I..\Source-I M:\keil\ARM\RV31\INC-I M:\keil\ARM\CMSIS\Include-I M:\keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -o ..\output\stm32f10x_dbgmcu.o --omf_browse ..\output\stm32f10x_dbgmcu.crf --depend ..\output\stm32f10x_dbgmcu.d)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_dbgmcu.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\core_cm3.h)(0x57492B24)
+I (M:\keil\ARM\ARMCC\include\stdint.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\system_stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\stm32f10x_conf.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_bkp.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_exti.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_flash.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_gpio.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_pwr.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rcc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_spi.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_tim.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_usart.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\misc.h)(0x574915D7)
+F (..\CMSIS\core_cm3.c)(0x57397E9D)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\CMSIS -I..\FWlib\inc -I..\Source-I M:\keil\ARM\RV31\INC-I M:\keil\ARM\CMSIS\Include-I M:\keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -o ..\output\core_cm3.o --omf_browse ..\output\core_cm3.crf --depend ..\output\core_cm3.d)
+I (M:\keil\ARM\ARMCC\include\stdint.h)(0x516E81E6)
+F (..\CMSIS\system_stm32f10x.c)(0x57397E9D)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\CMSIS -I..\FWlib\inc -I..\Source-I M:\keil\ARM\RV31\INC-I M:\keil\ARM\CMSIS\Include-I M:\keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -o ..\output\system_stm32f10x.o --omf_browse ..\output\system_stm32f10x.crf --depend ..\output\system_stm32f10x.d)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\core_cm3.h)(0x57492B24)
+I (M:\keil\ARM\ARMCC\include\stdint.h)(0x516E81E6)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\CMSIS\system_stm32f10x.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\Source\stm32f10x_conf.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_bkp.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_dbgmcu.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_exti.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_flash.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_gpio.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_pwr.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rcc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_rtc.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_spi.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_tim.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\stm32f10x_usart.h)(0x57397E9D)
+I (K:\work item\AIS_NET\AIS_NET程序\W100\W100_SingelmcuEdition 3.0.7\NETMARK_W100_F103 v3.0.7\FWlib\inc\misc.h)(0x574915D7)
+F (..\Source\README.txt)(0x573EE8D6)()

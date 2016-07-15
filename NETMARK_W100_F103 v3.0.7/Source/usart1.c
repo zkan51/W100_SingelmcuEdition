@@ -34,21 +34,21 @@ static void UART1_DMA_Configuration(void)
 	  DMA_InitTypeDef DMA_InitStructure;
 	  RCC_AHBPeriphClockCmd(RCC_AHBPeriph_DMA1, ENABLE);  //启动DMA时钟  
 
-    DMA_DeInit(DMA1_Channel5); 	//USART1 DMA1通道5配置   
-    DMA_InitStructure.DMA_PeripheralBaseAddr = (u32)(&USART1->DR);//外设地址  
-    DMA_InitStructure.DMA_MemoryBaseAddr = (uint32_t)com1_rxbuf;     //内存地址  
-    DMA_InitStructure.DMA_DIR = DMA_DIR_PeripheralSRC;            //dma传输方向从外设到内存 
-    DMA_InitStructure.DMA_BufferSize = UART_RX1_LEN;               //设置DMA在传输时缓冲区的长度  
-    DMA_InitStructure.DMA_PeripheralInc = DMA_PeripheralInc_Disable;//设置DMA的外设地址不变 
-    DMA_InitStructure.DMA_MemoryInc = DMA_MemoryInc_Enable;      //设置DMA的内存递增模式  
-    DMA_InitStructure.DMA_PeripheralDataSize = DMA_PeripheralDataSize_Byte;//外设数据字长 8位
-    DMA_InitStructure.DMA_MemoryDataSize = DMA_MemoryDataSize_Byte;    //内存数据字长8位   
-    DMA_InitStructure.DMA_Mode = DMA_Mode_Normal;                //设置DMA的传输模式   
-    DMA_InitStructure.DMA_Priority = DMA_Priority_VeryHigh;      //设置DMA的优先级别 最高
-    DMA_InitStructure.DMA_M2M = DMA_M2M_Disable;                 //设置DMA的2个memory中的变量互相访问  
-    DMA_Init(DMA1_Channel5,&DMA_InitStructure);  
-  
-    DMA_Cmd(DMA1_Channel5,ENABLE);
+			DMA_DeInit(DMA1_Channel5); 	//USART1 DMA1通道5配置   
+			DMA_InitStructure.DMA_PeripheralBaseAddr = (u32)(&USART1->DR);//外设地址  
+			DMA_InitStructure.DMA_MemoryBaseAddr = (uint32_t)com1_rxbuf;     //内存地址  
+			DMA_InitStructure.DMA_DIR = DMA_DIR_PeripheralSRC;            //dma传输方向从外设到内存 
+			DMA_InitStructure.DMA_BufferSize = UART_RX1_LEN;               //设置DMA在传输时缓冲区的长度  
+			DMA_InitStructure.DMA_PeripheralInc = DMA_PeripheralInc_Disable;//设置DMA的外设地址不变 
+			DMA_InitStructure.DMA_MemoryInc = DMA_MemoryInc_Enable;      //设置DMA的内存递增模式  
+			DMA_InitStructure.DMA_PeripheralDataSize = DMA_PeripheralDataSize_Byte;//外设数据字长 8位
+			DMA_InitStructure.DMA_MemoryDataSize = DMA_MemoryDataSize_Byte;    //内存数据字长8位   
+			DMA_InitStructure.DMA_Mode = DMA_Mode_Normal;                //设置DMA的传输模式   
+			DMA_InitStructure.DMA_Priority = DMA_Priority_VeryHigh;      //设置DMA的优先级别 最高
+			DMA_InitStructure.DMA_M2M = DMA_M2M_Disable;                 //设置DMA的2个memory中的变量互相访问  
+			DMA_Init(DMA1_Channel5,&DMA_InitStructure);  
+	
+			DMA_Cmd(DMA1_Channel5,ENABLE);
 }
 
  /***********************************************************
@@ -653,7 +653,7 @@ void Usart1GetCommand(void)  //串口1接收
 										tx1buf[0] = '$';
 										tx1buf[1] = 0x31;
 										tx1buf[2] = 0x02;
-										for(i=0;i<18;i++)
+										for(i=0;i<16;i++)
 											tx1buf[i+3] = AgencyName[i];
 										com1sendback();
 									}
