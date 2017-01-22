@@ -94,8 +94,15 @@ void USART2_Config(void)
 // 	
 // 	USART_DMACmd(USART2,USART_DMAReq_Rx,ENABLE);	//采用DMA方式接收  
 	
-  USART_Cmd(USART2, ENABLE);
+  USART_Cmd(USART2, DISABLE);
 }
+
+
+void Uart2_Cmd(FunctionalState state)
+{
+	 USART_Cmd(USART2, state);
+}
+
 
 void USART2_IRQHandler(void)
 {   

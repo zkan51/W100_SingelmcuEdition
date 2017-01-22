@@ -23,7 +23,7 @@ static void USART1_NVIC_Configuration(void)
     NVIC_InitTypeDef NVIC_InitStructure; 
     												
     NVIC_InitStructure.NVIC_IRQChannel = USART1_IRQn;	  
-    NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 3; 
+    NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0; 
     NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;	
     NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
     NVIC_Init(&NVIC_InitStructure);
@@ -48,8 +48,19 @@ static void UART1_DMA_Configuration(void)
 			DMA_InitStructure.DMA_M2M = DMA_M2M_Disable;                 //设置DMA的2个memory中的变量互相访问  
 			DMA_Init(DMA1_Channel5,&DMA_InitStructure);  
 	
-			DMA_Cmd(DMA1_Channel5,ENABLE);
+			//DMA_Cmd(DMA1_Channel5,ENABLE);
 }
+
+
+void Uart1_Cmd(FunctionalState state)
+{
+	int count;
+	count	= DMA1_Channel5->CNDTR;
+	DMA1_Channel5->CNDTR = UART_RX1_LEN;
+	DMA_Cmd(DMA1_Channel5,state);
+	USART_Cmd(USART1, state);
+}
+
 
  /***********************************************************
  * 函数名: USART1_Config
@@ -92,7 +103,7 @@ void USART1_Config(void)
 
 	USART_DMACmd(USART1,USART_DMAReq_Rx,ENABLE);	//采用DMA方式接收  
 	
-  USART_Cmd(USART1, ENABLE);
+  USART_Cmd(USART1, DISABLE);
 }
 
 /************************************************************

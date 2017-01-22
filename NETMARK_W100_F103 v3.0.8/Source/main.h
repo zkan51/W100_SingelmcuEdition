@@ -7,6 +7,7 @@
 #include "string.h"
 #include "math.h"
 
+#include "exti.h"
 #include "config.h"
 #include "usart1.h"
 #include "usart2.h"
@@ -23,6 +24,10 @@
 #include "led.h"
 #include "test.h"
 #include "si4463.h"
+
+#define SYSCLK_8M
+
+
 
 void Delay(__IO u32 nCount);
 
@@ -96,6 +101,7 @@ extern u8 cogsel;
 extern ais_status flag_m24;
 //extern u16 msequence_poly;	//上位机写入 与控制的接口。
 extern u8 flag_channel;		 //信道选择标志位,初始化为信道1
+extern u8 flag_charging; //充电标志位
 extern u8 code_cnt; //密码正确与否标志。code_flag1=6时密码正确
 extern ais_status encryption; //是否写过密码标志，默认为未写过。
 

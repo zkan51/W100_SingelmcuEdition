@@ -19,7 +19,7 @@ void GPIO_Configuration(void)
 	
 		GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0;   //待机模式引脚
 		GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU;
-		GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+		GPIO_InitStructure.GPIO_Speed = GPIO_Speed_2MHz;
 		GPIO_Init(GPIOA, &GPIO_InitStructure);
 		GPIO_ResetBits(GPIOA,GPIO_Pin_0);
 

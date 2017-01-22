@@ -16,8 +16,13 @@ void TIM4_Configuration(void)
 	
 		RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM4, ENABLE);
 		
-		TIM_TimeBaseStructure.TIM_Period=10000-1;		 								
-		TIM_TimeBaseStructure.TIM_Prescaler= 4800-1;// 0.1*10000 = 1s	
+		TIM_TimeBaseStructure.TIM_Period=1999;		 				
+#ifdef SYSCLK_8M	
+		TIM_TimeBaseStructure.TIM_Prescaler= 4000-1;// 0.1*10000 = 1s	
+#else
+		TIM_TimeBaseStructure.TIM_Prescaler= 24000-1;// 0.1*10000 = 1s	
+#endif
+	
 		TIM_TimeBaseStructure.TIM_ClockDivision=TIM_CKD_DIV1;
 		TIM_TimeBaseStructure.TIM_CounterMode=TIM_CounterMode_Up;
 		TIM_TimeBaseInit(TIM4, &TIM_TimeBaseStructure);
@@ -67,6 +72,7 @@ void TIM2_NVIC_Configuration(void)
   NVIC_Init(&NVIC_InitStructure);
 }
 
+
 void TIM2_Configuration(void)
 {
 		TIM_TimeBaseInitTypeDef  TIM_TimeBaseStructure;
@@ -75,7 +81,12 @@ void TIM2_Configuration(void)
 
 		TIM_DeInit(TIM2);
 		TIM_TimeBaseStructure.TIM_Period=1999;		 					/* 自动重装载寄存器周期的值(计数值) */
-		TIM_TimeBaseStructure.TIM_Prescaler= (24000 - 1);				      /* 时钟预分频数   例如：时钟频率=48MHZ/(时钟预分频+1) */ //0.5*2000 = 1s
+#ifdef	SYSCLK_8M
+		TIM_TimeBaseStructure.TIM_Prescaler= (4000 - 1);				      // 时钟预分频数    //0.5*2000 = 1s
+#else
+		TIM_TimeBaseStructure.TIM_Prescaler= (24000 - 1);				      // 时钟预分频数    //0.5*2000 = 1s
+#endif
+	
 		TIM_TimeBaseStructure.TIM_ClockDivision=TIM_CKD_DIV1; 			/* 采样分频 */
 		TIM_TimeBaseStructure.TIM_CounterMode=TIM_CounterMode_Up; 		/* 向上计数模式 */
 		TIM_TimeBaseInit(TIM2, &TIM_TimeBaseStructure);
@@ -121,11 +132,7 @@ void TIM2_IRQHandler(void)
 		// 搜GPS时间超过2分钟
 		if(tim2_cnt == gps_invalid)     //2min
 		{
-			TIM2_OFF();
-			GPS_OFF();
-			LED_OFF();
-			TIM4_OFF();
-   Sys_Standby();
+			Sys_Standby();
 		}
 				
 		TIM_ClearITPendingBit(TIM2 , TIM_FLAG_Update);

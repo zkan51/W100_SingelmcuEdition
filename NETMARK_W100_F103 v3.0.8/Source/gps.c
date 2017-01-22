@@ -13,6 +13,7 @@ void GPSIsOn(void)
 {
 		if (interval_num == 0) // 开GPS
 		{
+					Uart2_Cmd(ENABLE);
 					GPS_ON();
 					TIM4_ON();
 					tim2_cnt = 0;
@@ -20,7 +21,6 @@ void GPSIsOn(void)
 					interval_num++;
 					if (intervalA == 0)  //发送间隔3分钟
 								interval_num = 0;
-					BKP_WriteBackupRegister(BKP_DR1,interval_num);
 		}
 		else  //30s 和1分钟  两分钟开一次GPS
 		{
@@ -29,7 +29,6 @@ void GPSIsOn(void)
 							interval_num++;
 							if (interval_num == 4)
 										interval_num = 0;
-							BKP_WriteBackupRegister(BKP_DR1,interval_num);
 							Sys_Standby();
 					} 
 					else if (intervalA == 2)  // 发送间隔为1分钟
@@ -37,7 +36,6 @@ void GPSIsOn(void)
 							interval_num++;
 							if (interval_num == 2)
 										interval_num = 0;
-							BKP_WriteBackupRegister(BKP_DR1,interval_num);
 							Sys_Standby();
 					}
 		}
@@ -66,6 +64,9 @@ int GPS_RMC_Parse(char *line, GPS_INFO *GPS)
 			t_convert++;
 			if(t_convert==6)
 			{
+				GPS_OFF(); 
+				Uart2_Cmd(DISABLE);
+				
 	// 			tx1buf[0]='$'; tx1buf[1]=0x1C; tx1buf[2]=0x01; //GPS有效指令
 	// 			com1sendback(); //
 				
@@ -139,10 +140,6 @@ int GPS_RMC_Parse(char *line, GPS_INFO *GPS)
 				
 				Write_GPS_Info();
 				
-				GPS_OFF(); //GPS更新一次信息即关闭
-				TIM2_OFF();
-				TIM4_OFF();
-				LED_OFF();
 				Sys_Standby();
 		 }
 		}

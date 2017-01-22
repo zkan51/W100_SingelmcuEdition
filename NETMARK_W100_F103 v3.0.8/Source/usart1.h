@@ -10,5 +10,6 @@ void Usart1GetCommand(void);
 void USART1_printf(USART_TypeDef* USARTx, uint8_t *Data,...);
 void com1test(void);
 void tx1bufInfo(char txbuf1,char txbuf2);
+void Uart1_Cmd(FunctionalState state);
 
 #endif /* __USART1_H */

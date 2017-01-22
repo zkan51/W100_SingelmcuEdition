@@ -12,6 +12,7 @@ void Sys_Standby(void)
 {
 	if(!isCharging)
 	{
+		BKP_WriteBackupRegister(BKP_DR1,interval_num);
 		RTC_Init();
 		PWR_WakeUpPinCmd(ENABLE);
 		PWR_EnterSTANDBYMode();
@@ -29,11 +30,15 @@ void chargingState(void)
 {
 	sendTask = off;
 	GPS_OFF();
+	Uart2_Cmd(DISABLE);
 	TIM2_OFF();
 	TIM4_OFF();
 
+	
 	LED_ON();
 	LED_RED_ON();
+	
+	Uart1_Cmd(ENABLE);
 }
 
 /****************************************************************
@@ -45,6 +50,8 @@ void chargingState(void)
  *****************************************************************/
 void ExitCharging(void)
 {
+	Uart1_Cmd(DISABLE);
+	
 	LED_OFF();
 	LED_RED_OFF();
 	interval_num=0;

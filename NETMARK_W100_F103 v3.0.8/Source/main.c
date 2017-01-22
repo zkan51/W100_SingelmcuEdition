@@ -50,7 +50,7 @@ u8 txBuf[64]={0}; //发送AIS消息数组
 
 ais_status sendTask=on;//发射任务开启标志
 u8 flag_channel=0;		 //信道选择标志位,初始化为信道1
-									
+u8 flag_charging = 0; //充电标志位
 /*********************gps.c*************************/									
 GPS_INFO GPS; //gps信息结构体
 
@@ -75,16 +75,15 @@ u8 openflag; //开机
 
 int main(void)
 {
-	SYS_CLK_UP();  //设置系统时钟为48M
+	SYS_CLK_DOWN();  //设置系统时钟为8M
 	
 	RCC->APB2ENR|=1<<2;     //先使能外设IO PORTA时钟
 	RCC->APB2ENR|=1<<0;     //开启辅助时钟
-	GPIOA->CRL&=0XFFFFFFF0;//PA0设置成输入
-	GPIOA->CRL|=0X00000008;
 	
 	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2); //中断优先级分组2
 	delay_init();		        //实现精确延时函数
- GPIO_Configuration();  //GPIO
+	GPIO_Configuration();  //GPIO
+
 	USART1_Config();       //读写码接口
 	USART2_Config();       //GPS接收
 	TIM2_Configuration();  //GPS开启时间
@@ -93,22 +92,30 @@ int main(void)
 	BackupRegisterInit();
 	Read_GPS_Info();
 	ReadFlashInit();       //读取flash数据
-	
+	Exti_Init();
 	// si4463初始化
 	SPI1IO_Init();			      // IO模拟SPI
 	SI4463_IOSET();	
 	
+	
+	//判断是否为充电状态
+	if(isCharging)
+	{
+		flag_charging  = 1;
+	}
+	
+	ProgramSelector(); //拨码开关
+	
 	while(1)
  {	
-		ProgramSelector(); //拨码开关
-		if(!isCharging)     //只有在非充电状态下才发送AIS消息
+		if(flag_charging==0)
 		{
 			send_on();
 		}
-		else                //进入充电状态
+		else
 		{
 			chargingState();
-			while(isCharging);
+			while(flag_charging);
 			ExitCharging();
 		}
  }
